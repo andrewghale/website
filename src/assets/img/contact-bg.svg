@@ -1,0 +1,131 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 800 400'>
+    <rect fill='#330000' width='800' height='400'/>
+    <defs>
+        <linearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'>
+            <stop offset='0' stop-color='#ED9E3B' stop-opacity='0.6'/>
+            <stop offset='1' stop-color='rgb(136, 80, 11)' stop-opacity='0.4'/>
+        </linearGradient>
+    </defs>
+    <rect fill='black' width='800' height='400'/>
+    <g class="circles" fill-opacity='1'>
+        <circle class="c11" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='600'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1.8s"
+        />
+        </circle>
+        <circle class="c10" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='550'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1.8s"
+        />
+        </circle>
+        <circle class="c9" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='500'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1.6s"
+        />
+        </circle>
+        <circle class="c8" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='450'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1.4s"
+        />
+        </circle>
+        <circle class="c7" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='400'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1.2s"
+        />
+        </circle>
+        <circle class="c6" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='350'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="1s"
+        />
+        </circle>
+        <circle class="c5" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='300'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.8s"
+        />
+        </circle>
+        <circle class="c4" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='250'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.6s"
+        />
+        </circle>
+        <circle class="c3" fill='#ED9E3B' fill-opacity="0" cx='267.5' cy='200' r='200'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.4s"
+        />
+        </circle>
+        <circle class="c2" fill='#E8627B' fill-opacity="0" cx='267.5' cy='200' r='150'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.2s"
+        />
+        </circle>
+        <circle class="c1" fill='#82CACB' fill-opacity="0" cx='267.5' cy='200' r='100'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+                begin="0.1s"
+            />
+        </circle>
+        <circle class="c0" fill='#ED9E3B' cx='267.5' cy='200' r='50'>
+            <animate
+                attributeName="fill-opacity"
+                dur="0.5s"
+                fill="freeze"
+                from="0"
+                to="1"
+            />
+        </circle>
+    </g>
+</svg>

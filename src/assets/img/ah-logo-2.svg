@@ -1,0 +1,16 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="path-1-inside-1" fill="white">
+    <path d="M0 0H270.27V270.27H0V0Z"/>
+    </mask>
+    <path d="M0 0H270.27V270.27H0V0Z" fill="#ED9E3B" stroke="#ED9E3B" stroke-width="30" mask="url(#path-1-inside-1)"/>
+    <mask id="path-2-inside-2" fill="white">
+    <path d="M14.8649 14.8649H285.135V285.135H14.8649V14.8649Z"/>
+    </mask>
+    <path d="M14.8649 14.8649H285.135V285.135H14.8649V14.8649Z" fill="#82CACB" stroke="#82CACB" stroke-width="30" mask="url(#path-2-inside-2)"/>
+    <mask id="path-3-inside-3" fill="white">
+    <path d="M29.7297 29.7297H300V300H29.7297V29.7297Z"/>
+    </mask>
+    <path d="M29.7297 29.7297H300V300H29.7297V29.7297Z" fill="#E8627B" stroke="#E8627B" stroke-width="30" mask="url(#path-3-inside-3)"/>
+    <path d="M100.274 120.982H111.864L137.514 188.432H124.024L117.754 171.617H94.194L88.019 188.432H74.529L100.274 120.982ZM115.379 162.402L106.069 135.897L96.379 162.402H115.379Z" fill="#82CACB"/>
+    <path d="M248.718 121.145V188.595H235.703V159.81H205.113V188.595H192.003V121.145H205.113V148.41H235.703V121.145H248.718Z" fill="#82CACB"/>
+</svg>

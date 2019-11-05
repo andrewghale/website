@@ -1,0 +1,108 @@
+.home {
+    .tag {
+        background: linear-gradient(to bottom, #82CACB 0%, #82CACB 100%);
+        &:hover {
+            color: $black;
+            transition: background-size 0.07s ease-in-out;
+            @media screen and (max-width: $bp-tablet) {
+                color: $white;
+            }
+        }
+    }
+    .main-title {
+        // margin-top: 8rem;
+        margin-bottom: 0;
+        padding: 0;
+        position: relative;
+        letter-spacing: 0.4rem;
+        text-shadow: $title-glow;
+        @media screen and (max-width: $bp-tablet) {
+            letter-spacing: 0.18rem;
+            font-size: 5.6rem;
+        }
+        @media screen and (max-width: $bp-phone) {
+            letter-spacing: 0;
+            font-size: 4rem;
+        }
+        &:before {
+            background: $pink;
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            height: 8px;
+            width: -webkit-fill-available;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            text-shadow: $title-glow;
+        }
+    }
+    .subtitle {
+        margin-top: 0.2rem;
+        font-size: 3.5rem;
+        text-shadow: $title-glow;
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: $bp-phone) {
+            font-size: 6vw;
+        }
+    }
+    #typewriter {
+        display: flex;
+        width: fit-content;
+        background-color: $blue;
+        padding: 1rem;
+        font-size: 2.5rem;
+        margin: 1rem auto 0 auto;
+        color: $black;
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: $bp-phone) {
+            padding: 0.3rem;
+            font-size: 8vw;
+        }
+        .Typewriter__wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            color: $black;
+        }
+        .Typewriter__cursor {
+            color: $black;
+        }
+    }
+    .footer {
+        position: relative;
+        .social-links {
+            position: absolute;
+            left: -250px;
+            .social-link {
+                .link-container {
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.15);
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+        .git, .insta, .linkedin {
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-name: slideInFromLeft;
+            animation-fill-mode: forwards;
+            @for $i from 1 through 21{
+                &:nth-child(#{$i}){
+                  animation-delay: $i * 400ms;
+                  animation-duration: 1s + ($i * 100ms);
+                }
+            }
+        }
+        .copyright {
+            margin-left: auto;
+        }
+    }
+}

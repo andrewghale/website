@@ -1,0 +1,130 @@
+// Colors
+$orange: #ed9e3b;
+$blue: #82cacb;
+$pink: #e8627b;
+
+$black: #282828;
+$white: #fafafa;
+
+$transp-white: rgba(255, 255, 255, 0.3);
+$body-color: #ededed;
+
+$transparent: rgba(0, 0, 0, 0);
+$copyright-color: $white;
+
+// Breakpoints
+$bp-tablet: 770px;
+$bp-phone: 500px;
+$bp-xs: 415px;
+
+// Borders
+$border-radius: 3px;
+
+// Miscellaneous
+$title-glow: 0px 0px 10px $transp-white;
+
+//Path
+$path: "../../assets/img/";
+
+// Heights
+$header-height: 164px;
+$footer-height: 83px;
+
+// Animations
+//Underline fades in and slides in from the left
+@keyframes underline-slide {
+  0% {
+    opacity: 0;
+    left: -10px;
+    right: 10px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+    right: 0px;
+  }
+}
+
+// Element pulses with longer pause
+@keyframes pulse-pause {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  70% {
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+// For homepage logo animation
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1400;
+  }
+  50% {
+    stroke-dashoffset: 1400;
+    stroke-dasharray: 300;
+  }
+  90% {
+    stroke-dashoffset: 50;
+    stroke-dasharray: 1200;
+  }
+}
+
+// For homepage background
+@keyframes bg-zoom {
+  0% {
+    background-size: 17%;
+    background-position-y: 0%;
+    background-position-x: 0%;
+  }
+  33% {
+    background-position-x: 9%;
+    background-position-y: 0%;
+  }
+  50% {
+    background-size: 15%;
+  }
+  66% {
+    background-position-x: 9%;
+    background-position-y: 9%;
+  }
+  100% {
+    background-size: 17%;
+    background-position-y: 0%;
+    background-position-x: 0%;
+  }
+}
+
+@keyframes background-slide {
+  0% {
+    background-position-x: 40%;
+  }
+  100% {
+    background-position-x: 90%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(260px);
+  }
+}
+
+@keyframes makeBigger {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
