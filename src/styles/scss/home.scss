@@ -29,11 +29,11 @@
       display: block;
       position: absolute;
       bottom: 0px;
-      height: 8px;
+      height: 7px;
       width: -webkit-fill-available;
       left: 0px;
       right: 0px;
-      z-index: 1;
+      z-index: -1;
       text-shadow: $title-glow;
     }
   }
