@@ -1,71 +1,78 @@
 .site-header {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  position: fixed;
+  height: 164px;
+  z-index: 9;
+  @media screen and (max-width: $bp-phone) {
+    padding: 1rem;
+  }
+  .logo-holder {
     display: flex;
-    width: 100%;
-    padding: 2rem;
-    position: fixed;
-    height: 164px;
-    z-index: 9;
-    @media screen and (max-width: $bp-phone) {
-        padding: 1rem;
+    align-items: center;
+    height: fit-content;
+    @media screen and (max-width: $bp-tablet) {
+      margin-left: 0;
     }
-    .logo-holder {
-        display: flex;
-        align-items: center;
-        height: fit-content;
+    .home-logo {
+      height: 100px;
+      width: auto;
+      transition: transform 0.2s;
+      transition-timing-function: cubic-bezier(0.43, 1.95, 0.51, 0.71);
+      @media screen and (max-width: $bp-phone) {
+        height: 60px;
+      }
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s;
+        transition-timing-function: cubic-bezier(0.43, 1.95, 0.51, 0.71);
         @media screen and (max-width: $bp-tablet) {
-            margin-left: 0;
+          transform: none;
         }
-        .home-logo {
-            height: 100px;
-            width: auto;
-            transition: transform 0.2s;
-            transition-timing-function: cubic-bezier(.43,1.95,.51,.71);
-            @media screen and (max-width: $bp-phone) {
-                height: 60px;
-            }
-            &:hover {
-                transform: scale(1.1);
-                transition: transform 0.2s;
-                transition-timing-function: cubic-bezier(.43,1.95,.51,.71);
-            }
-        }
+      }
     }
-    .main-nav {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-        padding-top: 1rem;
-        max-height: 100px;
-        @media screen and (max-width: $bp-phone) {
-            padding-top: 0;
-        }
-        .tag {
-            margin: 0 2rem;
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-size .07s ease-in-out;
-            background: linear-gradient(to bottom, $white 0%, $white 100%);
-            background-position: 0 50%;
-            background-repeat: repeat-x;
-            background-size: 0px 0px;
-            @media screen and (max-width: $bp-tablet) {
-                background: none;
-                padding: 0.4rem;
-                margin: 0 1rem;
-                font-size: 1.3rem;
-            }
-            @media screen and (max-width: $bp-phone) {
-                padding: 0.4rem;
-                margin: 0 0.3rem;
-            }
-            &:hover {
-                background-size: 1px 40px;
-                transition: background-size 0.07s ease-in-out;
-                color: #000;;
-            }
-        }
+  }
+  .main-nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1rem;
+    max-height: 100px;
+    @media screen and (max-width: $bp-phone) {
+      padding-top: 0;
+      height: 60px;
     }
+    .tag {
+      margin: 0 2rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-size 0.07s ease-in-out;
+      background: linear-gradient(to bottom, $white 0%, $white 100%);
+      background-position: 0 50%;
+      background-repeat: repeat-x;
+      background-size: 0px 0px;
+      @media screen and (max-width: $bp-tablet) {
+        background: none;
+        padding: 0.4rem;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: $bp-phone) {
+        padding: 0.4rem;
+        margin: 0 0.3rem;
+      }
+      &:hover {
+        background-size: 1px 40px;
+        transition: background-size 0.07s ease-in-out;
+        color: #000;
+        @media screen and (max-width: $bp-tablet) {
+          color: $white;
+        }
+      }
+    }
+  }
 }
