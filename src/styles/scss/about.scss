@@ -1,16 +1,21 @@
 .about {
-    .tag {
-        &:hover {
-            color: $black;
-            @media screen and (max-width: $bp-tablet) {
-                color: $white;
-            }
-        }
+  .tag {
+    &:hover {
+      color: $black;
+      @media screen and (max-width: $bp-tablet) {
+        color: $white;
+      }
     }
-    .footer {
-        .copyright {
-            margin-left: auto;
-            color: $white;
-        }
+  }
+  .page-title {
+    &:before {
+      background: $white;
     }
+  }
+  .footer {
+    .copyright {
+      margin-left: auto;
+      color: $white;
+    }
+  }
 }
