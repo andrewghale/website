@@ -47,9 +47,11 @@
   transition: all 0.2s cubic-bezier(0.43, 1.95, 0.51, 0.71);
   &:hover {
     transform: scale(1.1);
+    opacity: 0.8;
     transition: all 0.2s cubic-bezier(0.43, 1.95, 0.51, 0.71);
     @media screen and (max-width: $bp-phone) {
       transform: none;
+      opacity: inherit;
     }
   }
 }
