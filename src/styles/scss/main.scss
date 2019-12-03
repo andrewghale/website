@@ -67,7 +67,11 @@
 
 .page-content {
   width: 800px;
-  margin: 0 auto 0 6rem;
+  margin: 0 6rem;
+  @media screen and (max-width: $bp-tablet) {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 }
 
 .page-title {
