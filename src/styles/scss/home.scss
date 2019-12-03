@@ -21,7 +21,8 @@
     }
     @media screen and (max-width: $bp-phone) {
       letter-spacing: 0;
-      font-size: 4.8rem;
+      font-size: 15vw;
+      margin-top: 5rem;
     }
     &:before {
       background: $pink;
