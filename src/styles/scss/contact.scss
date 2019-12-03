@@ -1,29 +1,23 @@
 .contact {
-    .tag {
-        &:hover {
-            color: $pink;
-            @media screen and (max-width: $bp-tablet) {
-                color: $white;
-                background: none;
-            }
-        }
-    }
-    .page-title {
-        &:before {
-            background: $white;
-        }
-    }
-    .page-text.contact-info {
-        justify-content: space-evenly;
-        width: 100%;
-        margin-right: 0;
-        .white-highlight {
-            @include white-highlight;
-            animation: pulse-pause 2s ease-in-out 0s infinite forwards;
-        }
-    }
-    .copyright {
+  .tag {
+    &:hover {
+      color: $pink;
+      @media screen and (max-width: $bp-tablet) {
         color: $white;
+        background: none;
+      }
     }
+  }
+  .page-text.contact-info {
+    justify-content: space-evenly;
+    width: 100%;
+    margin-right: 0;
+    .white-highlight {
+      @include white-highlight;
+      animation: pulse-pause 2s ease-in-out 0s infinite forwards;
+    }
+  }
+  .copyright {
+    color: $white;
+  }
 }
-

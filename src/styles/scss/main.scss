@@ -81,6 +81,7 @@
   position: relative;
   &:before {
     @include underline-slide;
+    background: $white;
   }
   @media screen and (max-width: $bp-tablet) {
     align-self: flex-start;
