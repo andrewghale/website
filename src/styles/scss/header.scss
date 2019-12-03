@@ -70,7 +70,7 @@
       &:hover {
         background-size: 1px 40px;
         transition: background-size 0.07s ease-in-out;
-        color: #000;
+        color: $pink;
         @media screen and (max-width: $bp-tablet) {
           color: $white;
         }

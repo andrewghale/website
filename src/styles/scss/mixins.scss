@@ -1,49 +1,38 @@
 // Slides in title underline from the left
 @mixin underline-slide {
-    content: "";
-    position: absolute;
-    bottom: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.3rem;
+  opacity: 0;
+  left: -10px;
+  right: 10px;
+  animation: underline-slide 1s ease-in-out 0.5s 1 forwards;
+  @media screen and (max-width: $bp-tablet) {
+    margin-left: 0rem;
     height: 0.3rem;
-    opacity: 0;
-    left: -10px;
-    right: 10px;
-    animation: underline-slide 1s ease-in-out 0.5s 1 forwards;
-    @media screen and (max-width: $bp-tablet) {
-        margin-left: 0rem;
-        height: 0.3rem;
-    }
+  }
 }
 
 // Highlights text with white background
 @mixin white-highlight {
-    height: fit-content;
-    align-self: center;
+  height: fit-content;
+  align-self: center;
+  font-size: 2rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: $border-radius;
+  background-color: $white;
+  color: $pink;
+  margin-top: 0rem;
+  &:hover {
+    cursor: pointer;
+    animation: none;
+  }
+  @media screen and (max-width: $bp-tablet) {
     font-size: 2rem;
-    padding: 0.5rem 0.7rem;
-    border-radius: $border-radius;
-    background-color: $white;
-    color: $pink;
-    margin-top: 0rem;
-    &:hover {
-        cursor: pointer;
-        animation: none;
-    }
-    @media screen and (max-width: $bp-tablet) {
-        font-size: 2rem;
-    }
-    @media screen and (max-width: $bp-phone) {
-        margin-top: 4rem;
-        font-size: 1.5rem;
-    }
-}
-
-// Social Icons rise on hover, absent on tablets and mobiles
-@mixin hover-rise {
-    // background: red;
-    transform: translateY(-5px);
-    transition: transform 0.2s;
-    @media screen and (max-width: $bp-tablet) {
-        transform: translateY(0px);
-        transition: none;
-    }
+  }
+  @media screen and (max-width: $bp-phone) {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
 }

@@ -97,6 +97,7 @@
     margin-top: 0.2rem;
   }
 }
+
 .page-text {
   display: flex;
   flex-direction: column;
@@ -119,10 +120,6 @@
 .show {
   opacity: 1;
   transition: all 1s ease-in-out;
-}
-
-.hover-rise {
-  transform: translateY(20px);
 }
 
 .no-link {
