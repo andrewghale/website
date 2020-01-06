@@ -16,7 +16,7 @@ const Header = ({ lightLogo }) => (
 );
 
 Header.propTypes = {
-  lightLogo: PropTypes.string
+  lightLogo: PropTypes.bool
 }
 
 export default Header;

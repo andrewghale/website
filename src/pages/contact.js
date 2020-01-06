@@ -32,7 +32,9 @@ const Contact = ({ match }) => {
 
 Contact.propTypes = {
   path: PropTypes.string,
-  match: PropTypes.string
+  match: PropTypes.shape({
+    params: PropTypes.object,
+  }).isRequired,
 }
 
 export default Contact;

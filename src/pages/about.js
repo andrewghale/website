@@ -29,7 +29,9 @@ const About = ({ match }) => {
 
 About.propTypes = {
   path: PropTypes.string,
-  match: PropTypes.string
+  match: PropTypes.shape({
+    params: PropTypes.object,
+  }).isRequired,
 }
 
 export default About;

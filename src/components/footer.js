@@ -24,7 +24,7 @@ const Footer = ({ lightLogo }) => {
 }
 
 Footer.propTypes = {
-  lightLogo: PropTypes.string
+  lightLogo: PropTypes.bool
 }
 
 export default Footer;
