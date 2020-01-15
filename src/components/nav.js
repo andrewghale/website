@@ -6,6 +6,7 @@ const Nav = () => (
         <NavLink id="no-link" activeClassName='is-active' className="tag" to="/">Home</NavLink>
         <NavLink activeClassName='no-link' className="tag" to="/about">About</NavLink>
         <NavLink activeClassName='no-link' className="tag" to="/projects">Projects</NavLink>
+        {/* <NavLink activeClassName='no-link' className="tag" to="/numbermachine">NumberMachine</NavLink> */}
         <NavLink activeClassName='no-link' className="tag" to="/contact">Contact</NavLink>
     </nav>
 );

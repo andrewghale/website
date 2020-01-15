@@ -4,7 +4,8 @@ import Contact from './pages/contact';
 import Index from './pages/index';
 import About from './pages/about';
 import Projects from './pages/projects';
-import './styles/scss/app.scss';
+import NumberMachine from './pages/numbermachine';
+import './styles/app.scss';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               <Route exact path="/" component={Index} />
               <Route path="/about" component={About} />
               <Route path="/projects" component={Projects} />
+              <Route path="/numbermachine" component={NumberMachine} />
               <Route path="/contact" component={Contact} />
           </Switch>
       </HashRouter>
