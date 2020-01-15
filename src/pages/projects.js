@@ -8,7 +8,7 @@ const About = ({ match }) => {
   return (
       <Fragment>
             <Header lightLogo={path !== '/'} />
-            <p className="projects-text">Recent projects will be added soon!</p>
+            <p className="projects-text">🚧Recent projects will be added soon!🚧</p>
             <Footer lightLogo={path !== '/'} />
       </Fragment>
   );
