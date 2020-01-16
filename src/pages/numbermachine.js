@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import "prismjs";
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
-// import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
+import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 
 const NumberMachine = () => {
     return(
         <Fragment>
             <div className="page-container">
-            {/* <div className="coffee-ring-bottom-right">
+            <div className="coffee-ring-bottom-right">
                 <img src={coffeeRing} alt="coffee ring" />
             </div>
             <div className="coffee-ring-bottom-left">
                 <img src={coffeeRing} alt="coffee ring" />
-            </div> */}
+            </div>
                 <div className="container">
                     <img className="title" src={title} alt="Number Machine" />
                     <p className="created-by">Created by Andrew Hale</p>
