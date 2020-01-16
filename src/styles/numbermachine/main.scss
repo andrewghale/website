@@ -85,7 +85,10 @@
       width: fit-content;
       width: -moz-max-content;
       transition: all ease-in-out 0.1s;
-
+      &:hover {
+        transform: scale(1.07);
+        transition: all ease-in-out 0.1s;
+      }
       .github-link {
         display: flex;
         align-items: center;

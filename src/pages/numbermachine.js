@@ -7,10 +7,10 @@ const NumberMachine = () => {
     return(
         <Fragment>
             <div className="page-container">
-            {/* <div class="coffee-ring-bottom-right">
+            {/* <div className="coffee-ring-bottom-right">
                 <img src={coffeeRing} alt="coffee ring" />
             </div>
-            <div class="coffee-ring-bottom-left">
+            <div className="coffee-ring-bottom-left">
                 <img src={coffeeRing} alt="coffee ring" />
             </div> */}
                 <div className="container">
@@ -63,6 +63,36 @@ const NumberMachine = () => {
                         Enter a number above!
                     </p>
                 </div>
+                <div className="container">
+                <div className="explain-container">
+                    <h3>How (Some Of) It Works</h3>
+                    <h4>Creating the array</h4>
+                    <p>This function checks whether the <code className="language-javascript">input</code> value can be divided by the current iteration <code className="language-javascript">[i]</code> without leaving
+                        a remainder - if it can, then the number <code className="language-javascript">[i]</code> is added on to the end of an array named <code className="language-javascript">total</code>.</p>
+                    <div className="code-container">
+                        <pre>
+                            <code className="language-javascript">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium numquam voluptates odit. Inventore sed id, excepturi dignissimos officiis ullam numquam recusandae suscipit quisquam illo architecto corporis laudantium facere quas itaque!
+                            </code>
+                        </pre>
+                    </div>
+                    <h4>Prime Numbers</h4>
+                    <p>
+                        This function checks to see if the <code className="language-javascript">input</code> value is a prime number.
+                    </p>
+                    <p>
+                        Inputting 1 and 2 will simply return "False" and "True" respectively but for any number greater than 2, if it can be divided by the current iteration <code className="language-javascript">[i]</code>,
+                        it won't be a prime number, so the output is false.
+                    </p>
+                    <div className="code-container">
+                        <pre>
+                            <code className="language-javascript">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi commodi maxime porro explicabo? Enim quasi dolor voluptas rerum perspiciatis fugit labore omnis aperiam quis quibusdam consequatur, mollitia cupiditate delectus esse?
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
             </div>
         </Fragment>
     )
