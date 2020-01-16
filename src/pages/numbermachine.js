@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import "prismjs";
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 // import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
@@ -65,18 +66,30 @@ const NumberMachine = () => {
                 </div>
                 <div className="container">
                 <div className="explain-container">
-                    <h3>How (Some Of) It Works</h3>
-                    <h4>Creating the array</h4>
+                    <h3 className="explain-title">How (Some Of) It Works</h3>
+                    <h4 className="explain-subtitle">Creating the array</h4>
                     <p>This function checks whether the <code className="language-javascript">input</code> value can be divided by the current iteration <code className="language-javascript">[i]</code> without leaving
                         a remainder - if it can, then the number <code className="language-javascript">[i]</code> is added on to the end of an array named <code className="language-javascript">total</code>.</p>
                     <div className="code-container">
                         <pre>
                             <code className="language-javascript">
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium numquam voluptates odit. Inventore sed id, excepturi dignissimos officiis ullam numquam recusandae suscipit quisquam illo architecto corporis laudantium facere quas itaque!
+                                {`
+    const divCalculator = (input) => {
+    let total = [];
+    for (let i = 1; i <= input; i++) {
+        if (input % i === 0) {
+            total.push(i);
+        };
+    };
+    return total;
+    }
+    // if inputValue is 12, total = [1, 2, 3, 4, 6, 12]
+    // if inputValue is 319, total = [1, 11, 29, 319]
+                                `}
                             </code>
                         </pre>
                     </div>
-                    <h4>Prime Numbers</h4>
+                    <h4 className="explain-subtitle">Prime Numbers</h4>
                     <p>
                         This function checks to see if the <code className="language-javascript">input</code> value is a prime number.
                     </p>
@@ -87,7 +100,21 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium numquam vo
                     <div className="code-container">
                         <pre>
                             <code className="language-javascript">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi commodi maxime porro explicabo? Enim quasi dolor voluptas rerum perspiciatis fugit labore omnis aperiam quis quibusdam consequatur, mollitia cupiditate delectus esse?
+                                {`
+    const testPrime = (input) => {
+    if ( input === 1 ) {
+        return ('false');
+    } else if ( input === 2 ) {
+        return ('true');
+    } else {
+        for ( let i = 2; i < input; i++ ) {
+            if ( input % i === 0 ) {
+                return ('false');
+            }
+        }
+    return ('true');
+    }
+                                `}
                             </code>
                         </pre>
                     </div>

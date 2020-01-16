@@ -35,6 +35,17 @@
 //   list-style: none;
 // }
 
+.explain-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.explain-subtitle {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin: 4rem 0 0 0;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
