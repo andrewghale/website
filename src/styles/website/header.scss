@@ -46,7 +46,7 @@
       height: 60px;
     }
     .tag {
-      margin: 0 2rem;
+      margin: 0 0.8rem;
       padding: 1rem;
       font-size: 1.4rem;
       font-weight: bold;
@@ -64,8 +64,11 @@
       }
       @media screen and (max-width: $bp-phone) {
         padding: 0.4rem;
-        margin: 0 0.3rem;
+        margin: 0rem;
         font-size: 1rem;
+      }
+      @media screen and (max-width: $bp-xs) {
+        font-size: 0.8rem;
       }
       &:hover {
         background-size: 1px 40px;

@@ -40,6 +40,9 @@
       margin-right: 1.5rem;
       margin-top: 2rem;
     }
+    @media screen and (max-width: $bp-xs) {
+      font-size: 0.7rem;
+    }
   }
 }
 
