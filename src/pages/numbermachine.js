@@ -1,11 +1,15 @@
 import React, { Fragment } from 'react';
+import Form from '../components/form'
+import Warning from '../components/warning'
+import Output from '../components/output'
+import OutputPairs from '../components/outputPairs'
 import "prismjs";
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 
 const NumberMachine = () => {
-    return(
+    return (
         <Fragment>
             <div className="page-container">
             <div className="coffee-ring-bottom-right">
@@ -23,15 +27,33 @@ const NumberMachine = () => {
                             <p>/andrewghale</p>
                         </a>
                     </div>
-                    <form className="main-form">
+                    {/* <form className="main-form">
                         <label className="label" htmlFor="guessField">
-                            <input type="number" id="guessField" className="guessField" />
-                            <input type="submit" value="Submit"
-                            className="guessSubmit button" id="submitguess" />
+                            <input
+                                type="number"
+                                forwardref="guessField"
+                                className="guessField"
+                            />
+                            <input
+                                type="submit"
+                                value="Submit"
+                                // onClick={handleClick}
+                                className="guessSubmit button" id="submitguess"
+                            />
                         </label>
-                    </form>
-                    <div className="warning">Whole numbers between 1 and 999999999 only!</div>
-                    <div className="output-label">Is Prime?</div>
+                    </form> */}
+                    <Form />
+                    <Warning />
+                    {/* <div className="warning">Whole numbers between 1 and 999999999 only!</div> */}
+                    <Output name="prime" text="Is Prime?" />
+                    <Output name="list" text="List of Divisors:" />
+                    <OutputPairs name="pairs-list" text="Pairs of Divisors:"/>
+                    <Output name="reduced" text="Sum of Divisors:" />
+                    <Output name="sqrt" text="Square Root:" />
+                    <Output name="squared" text="Squared:" />
+                    <Output name="cbrt" text="Cube Root:" />
+                    <Output name="cubed" text="Cubed:" />
+                    {/* <div className="output-label">Is Prime?</div>
                     <p id="output-prime" className="output">
                         Enter a number above!
                     </p>
@@ -62,7 +84,7 @@ const NumberMachine = () => {
                     <div className="output-label">Cubed:</div>
                     <p id="output-cubed" className="output">
                         Enter a number above!
-                    </p>
+                    </p> */}
                 </div>
                 <div className="container">
                 <div className="explain-container">
