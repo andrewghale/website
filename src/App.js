@@ -7,7 +7,7 @@ import Projects from './pages/projects';
 import NumberMachine from './pages/numbermachine';
 import './styles/app.scss';
 
-function App() {
+const App = () => {
   return (
       <HashRouter>
           <Switch>
