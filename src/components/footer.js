@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { socialLinks, socialLinksWhite, date } from '../utils';
 
-const Footer = ({ lightLogo }) => {
+const Footer = ({ lightLogo, pageName }) => {
   const icons = lightLogo ? socialLinksWhite : socialLinks;
 
   return (
-      <footer className="footer">
+      <footer className={ `footer ${pageName !== "number-machine" ? "" : "nm-footer"}`}>
           <div className="social-links" id="social-links">
               {icons.map((link, i) => (
                   <div className={`social-link ${link.className}`} key={i} id={link.className}>

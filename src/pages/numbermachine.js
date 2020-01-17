@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import Form from '../components/form'
 import Warning from '../components/warning'
 import Output from '../components/output'
@@ -11,6 +13,7 @@ import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 const NumberMachine = () => {
     return (
         <Fragment>
+            <Header pageName="number-machine"/>
             <div className="page-container">
             <div className="coffee-ring coffee-ring-bottom-right">
                 <img src={coffeeRing} alt="coffee ring" />
@@ -27,21 +30,6 @@ const NumberMachine = () => {
                             <p>/andrewghale</p>
                         </a>
                     </div>
-                    {/* <form className="main-form">
-                        <label className="label" htmlFor="guessField">
-                            <input
-                                type="number"
-                                forwardref="guessField"
-                                className="guessField"
-                            />
-                            <input
-                                type="submit"
-                                value="Submit"
-                                // onClick={handleClick}
-                                className="guessSubmit button" id="submitguess"
-                            />
-                        </label>
-                    </form> */}
                     <Form />
                     <Warning />
                     {/* <div className="warning">Whole numbers between 1 and 999999999 only!</div> */}
@@ -53,38 +41,6 @@ const NumberMachine = () => {
                     <Output name="squared" text="Squared:" />
                     <Output name="cbrt" text="Cube Root:" />
                     <Output name="cubed" text="Cubed:" />
-                    {/* <div className="output-label">Is Prime?</div>
-                    <p id="output-prime" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">List of Divisors:</div>
-                    <p id="output-list" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">Pairs of Divisors:</div>
-                    <ul id="output-pairs-list" className="pairs-list output">
-                        <li>Enter a number above!</li>
-                    </ul>
-                    <div className="output-label">Sum of Divisors:</div>
-                    <p id="output-reduced" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">Square Root:</div>
-                    <p id="output-sqrt" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">Squared:</div>
-                    <p id="output-squared" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">Cube Root:</div>
-                    <p id="output-cbrt" className="output">
-                        Enter a number above!
-                    </p>
-                    <div className="output-label">Cubed:</div>
-                    <p id="output-cubed" className="output">
-                        Enter a number above!
-                    </p> */}
                 </div>
                 <div className="container">
                 <div className="explain-container">
@@ -143,6 +99,7 @@ const NumberMachine = () => {
                 </div>
             </div>
             </div>
+            <Footer pageName="number-machine"/>
         </Fragment>
     )
 }
