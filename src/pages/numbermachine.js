@@ -12,10 +12,10 @@ const NumberMachine = () => {
     return (
         <Fragment>
             <div className="page-container">
-            <div className="coffee-ring-bottom-right">
+            <div className="coffee-ring coffee-ring-bottom-right">
                 <img src={coffeeRing} alt="coffee ring" />
             </div>
-            <div className="coffee-ring-bottom-left">
+            <div className="coffee-ring coffee-ring-bottom-left">
                 <img src={coffeeRing} alt="coffee ring" />
             </div>
                 <div className="container">

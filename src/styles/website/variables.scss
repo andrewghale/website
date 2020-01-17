@@ -9,9 +9,6 @@ $white: #fafafa;
 $transp-white: rgba(255, 255, 255, 0.3);
 $body-color: #ededed;
 
-$transparent: rgba(0, 0, 0, 0);
-$copyright-color: $white;
-
 // Breakpoints
 $bp-desktop: 1200px;
 $bp-tablet: 770px;
@@ -127,5 +124,18 @@ $footer-height: 83px;
   }
   100% {
     transform: scale(1.1);
+  }
+}
+
+// Number Machine Animations
+@keyframes button-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
