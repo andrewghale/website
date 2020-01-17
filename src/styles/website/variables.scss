@@ -6,9 +6,6 @@ $pink: #e8627b;
 $black: #282828;
 $white: #fafafa;
 
-$transp-white: rgba(255, 255, 255, 0.3);
-$body-color: #ededed;
-
 // Breakpoints
 $bp-desktop: 1200px;
 $bp-tablet: 770px;
@@ -19,7 +16,7 @@ $bp-xs: 415px;
 $border-radius: 3px;
 
 // Miscellaneous
-$title-glow: 0px 0px 10px $transp-white;
+$title-glow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 
 //Path
 $path: "../../assets/img/";

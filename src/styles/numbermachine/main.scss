@@ -92,7 +92,7 @@ input[type="number"] {
     .created-by {
       text-align: center;
       margin: 0.5rem;
-      @media screen and (max-width: $bp-phone) {
+      @media screen and (max-width: $bp-tablet) {
         font-size: 1rem;
       }
     }
@@ -109,6 +109,7 @@ input[type="number"] {
       @media screen and (max-width: $bp-xs) {
         height: 50px;
         font-size: 0.8rem;
+        width: 100%;
       }
       &:hover {
         transform: scale(1.07);
@@ -125,7 +126,8 @@ input[type="number"] {
         }
         p {
           letter-spacing: 0.1rem;
-          // color: black;
+          font-size: 1.2rem;
+          color: $black;
         }
       }
     }
@@ -204,7 +206,6 @@ input[type="number"] {
     }
   }
   p {
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     letter-spacing: 0.04rem;
     line-height: 2rem;
