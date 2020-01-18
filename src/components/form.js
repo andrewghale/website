@@ -6,6 +6,7 @@ const Form = () => {
 
   const handleChange = (e) => {
     setGuess(e.target.value);
+    console.log(e.target.value);
   }
 
   const handleSubmit = (e) => {
@@ -13,12 +14,15 @@ const Form = () => {
   }
 
   return (
-    <form className="main-form" onSubmit={handleSubmit}>
-      <label className="label">
-        <input type="number" className="guessField" value={guess} onChange={handleChange} placeholder="Please enter a number" />
-      </label>
-      <button type="submit" className="guessSubmit button" id="submitguess">Submit</button>
-    </form>
+    <div>
+      <form guess={guess} className="main-form" onSubmit={handleSubmit}>
+        <label className="label">
+          <input type="number" className="guessField" value={guess} onChange={handleChange} placeholder="Please enter a number" />
+        </label>
+        <button type="submit" className="guessSubmit button" id="submitguess">Submit</button>
+      </form>
+      {/* <p>{guess}</p> */}
+    </div>
   );
 }
 

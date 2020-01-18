@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Form from '../components/form'
@@ -13,14 +13,14 @@ import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 const NumberMachine = () => {
 
     // const [ guess, setGuess ] = useState('');
-
     // const input = parseInt(guess.value);
-
     // const getOutput = document.getElementById.bind(document);
-
     // getOutput("output-sqrt").innerHTML = Math.sqrt(input);;
-
     // console.log(guess);
+
+    const handleSquare = (e) => {
+        console.log(e.target.value);
+    }
 
     return (
         <Fragment>
