@@ -6,8 +6,6 @@ import ButtonAdd from '../components/ButtonAdd';
 import ButtonSubtract from '../components/ButtonSubtract';
 import ButtonReset from '../components/ButtonReset';
 
-export
-
 const Counter = () => {
 
     const [ count, setCount ] = useState(0);
