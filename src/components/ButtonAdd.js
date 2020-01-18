@@ -12,14 +12,10 @@ export const Button = styled.button`
     outline: none;
 `;
 
-const ButtonAdd = (props) => {
-    return (
-        <div>
-            <Button onClick={props.buttonFunction}>
-                +
-            </Button>
-        </div>
-    )
-}
+const ButtonAdd = ({ buttonFunction }) => (
+	<Button onClick={buttonFunction}>
+			+
+	</Button>
+)
 
-export default ButtonAdd
+export default ButtonAdd;
