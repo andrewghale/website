@@ -1,24 +1,16 @@
 import React, { Fragment } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Form from '../components/Form'
-import Warning from '../components/Warning'
-import Output from '../components/Output'
-import OutputPairs from '../components/OutputPairs'
-import "prismjs";
+import Form from '../components/Form';
+import Warning from '../components/Warning';
+import Output from '../components/Output';
+import OutputPairs from '../components/OutputPairs';
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
+import "prismjs";
 
 const NumberMachine = () => {
-    // const [ guess, setGuess ] = useState('');
-    // const input = parseInt(guess.value);
-    // const getOutput = document.getElementById.bind(document);
-    // getOutput("output-sqrt").innerHTML = Math.sqrt(input);;
-    // console.log(guess);
-    // const handleSquare = (e) => {
-    //     console.log(e.target.value);
-    // }
     return (
         <Fragment>
             <Header pageName="number-machine"/>
