@@ -11,17 +11,14 @@ import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 
 const NumberMachine = () => {
-
     // const [ guess, setGuess ] = useState('');
     // const input = parseInt(guess.value);
     // const getOutput = document.getElementById.bind(document);
     // getOutput("output-sqrt").innerHTML = Math.sqrt(input);;
     // console.log(guess);
-
     // const handleSquare = (e) => {
     //     console.log(e.target.value);
     // }
-
     return (
         <Fragment>
             <Header pageName="number-machine"/>
@@ -43,7 +40,6 @@ const NumberMachine = () => {
                     </div>
                     <Form />
                     <Warning />
-                    {/* <div className="warning">Whole numbers between 1 and 999999999 only!</div> */}
                     <Output name="prime" text="Is Prime?" />
                     <Output name="list" text="List of Divisors:" />
                     <OutputPairs name="pairs-list" text="Pairs of Divisors:"/>
