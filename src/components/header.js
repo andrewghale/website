@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import logoLight from '../assets/img/logo-light.svg';
 import logo from '../assets/img/logo.svg';
-import Nav from './nav';
+import Nav from './Nav';
 
 const Header = ({ lightLogo, pageName }) => (
     <header className={ `site-header ${pageName !== "number-machine" ? "" : "nm-header"}`}>
@@ -13,7 +13,6 @@ const Header = ({ lightLogo, pageName }) => (
                 className="home-logo"
                 src={lightLogo === true ? logoLight : logo}
                 alt="logo"
-                href="/"
             />
             </NavLink>
         </div>

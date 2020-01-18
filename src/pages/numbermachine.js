@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Form from '../components/form'
-import Warning from '../components/warning'
-import Output from '../components/output'
-import OutputPairs from '../components/outputPairs'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Form from '../components/Form'
+import Warning from '../components/Warning'
+import Output from '../components/Output'
+import OutputPairs from '../components/OutputPairs'
 import "prismjs";
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
@@ -18,9 +18,9 @@ const NumberMachine = () => {
     // getOutput("output-sqrt").innerHTML = Math.sqrt(input);;
     // console.log(guess);
 
-    const handleSquare = (e) => {
-        console.log(e.target.value);
-    }
+    // const handleSquare = (e) => {
+    //     console.log(e.target.value);
+    // }
 
     return (
         <Fragment>
