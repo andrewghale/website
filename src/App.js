@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import Index from './pages/index';
+import Index from './pages';
 import About from './pages/about';
 import Projects from './pages/projects';
 import NumberMachine from './pages/numbermachine';

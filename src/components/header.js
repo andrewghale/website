@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import logoLight from '../assets/img/logo-light.svg';
 import logo from '../assets/img/logo.svg';
-import Nav from './Nav';
+import Nav from './nav';
 
 const Header = ({ lightLogo, pageName }) => (
     <header className={ `site-header ${pageName !== "number-machine" ? "" : "nm-header"}`}>

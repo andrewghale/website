@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import DisplayCount from '../components/DisplayCount';
-import ButtonAdd from '../components/ButtonAdd';
-import ButtonSubtract from '../components/ButtonSubtract';
-import ButtonReset from '../components/ButtonReset';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import DisplayCount from '../components/displaycount';
+import ButtonAdd from '../components/buttonadd';
+import ButtonSubtract from '../components/buttonsubtract';
+import ButtonReset from '../components/buttonreset';
 
 const Counter = () => {
 

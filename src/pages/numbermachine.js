@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Form from '../components/Form';
-import Warning from '../components/Warning';
-import Output from '../components/Output';
-import OutputPairs from '../components/OutputPairs';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Form from '../components/form';
+import Warning from '../components/warning';
+import Output from '../components/output';
+import OutputPairs from '../components/outputpairs';
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
