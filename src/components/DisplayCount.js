@@ -1,9 +1,9 @@
 import React from 'react';
 
-const DisplayCount = (props) => {
+const DisplayCount = ({ count }) => {
 	return (
 		<div>
-			<p>Count: {props.count}</p>
+			<p>Count: {count}</p>
 		</div>
 	)
 }

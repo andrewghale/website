@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Form from '../components/form';
@@ -9,8 +9,25 @@ import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 import "prismjs";
+// Uitls
+//import { isPrimeNumber, isDivisor } from '../utils/prime-number';
 
 const NumberMachine = () => {
+    const [ guess, setGuess ] = useState('');
+
+    useEffect(() => {
+        console.log('LOADED')
+    }, [])
+
+    const handleChange = (e) => {
+      setGuess(e.target.value);
+    }
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log(guess);
+    }
+
     return (
         <Fragment>
             <Header pageName="number-machine"/>
@@ -30,9 +47,9 @@ const NumberMachine = () => {
                             <p>/andrewghale</p>
                         </a>
                     </div>
-                    <Form />
+                    <Form guess={guess} submit={handleSubmit} change={handleChange} />
                     <Warning />
-                    <Output name="prime" text="Is Prime?" />
+                    <Output name="prime" text="Is Prime?" guess={guess} />
                     <Output name="list" text="List of Divisors:" />
                     <OutputPairs name="pairs-list" text="Pairs of Divisors:"/>
                     <Output name="reduced" text="Sum of Divisors:" />

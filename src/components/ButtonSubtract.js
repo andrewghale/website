@@ -12,14 +12,10 @@ export const Button = styled.button`
     outline: none;
 `;
 
-const ButtonSubtract = (props) => {
-    return (
-        <div>
-            <Button onClick={props.buttonFunction}>
-                -
-            </Button>
-        </div>
-    )
-}
+const ButtonSubtract = ({ buttonFunction }) => (
+	<Button onClick={buttonFunction}>
+			-
+	</Button>
+)
 
 export default ButtonSubtract

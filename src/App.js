@@ -8,19 +8,17 @@ import Counter from './pages/counter';
 import Contact from './pages/contact';
 import './styles/app.scss';
 
-const App = () => {
-  return (
-      <HashRouter>
-          <Switch>
-              <Route exact path="/" component={Index} />
-              <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/numbermachine" component={NumberMachine} />
-              <Route path="/counter" component={Counter} />
-              <Route path="/contact" component={Contact} />
-          </Switch>
-      </HashRouter>
-  );
-}
+const App = () => (
+	<HashRouter>
+		<Switch>
+			<Route exact path="/" component={Index} />
+			<Route path="/about" component={About} />
+			<Route path="/projects" component={Projects} />
+			<Route path="/numbermachine" component={NumberMachine} />
+			<Route path="/counter" component={Counter} />
+			<Route path="/contact" component={Contact} />
+		</Switch>
+	</HashRouter>
+);
 
 export default App;

@@ -1,29 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Form = () => {
+const Form = ({ guess, submit, change }) => (
+  <div>
+    <form className="main-form" onSubmit={submit}>
+      <label className="label">
+        <input type="number" className="guessField" value={guess} onChange={change} placeholder="Please enter a number" />
+      </label>
+      <button type="submit" className="guessSubmit button" id="submitguess">Submit</button>
+    </form>
+  </div>
+);
 
-  const [ guess, setGuess ] = useState('')
-
-  const handleChange = (e) => {
-    setGuess(e.target.value);
-    console.log(e.target.value);
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
-
-  return (
-    <div>
-      <form guess={guess} className="main-form" onSubmit={handleSubmit}>
-        <label className="label">
-          <input type="number" className="guessField" value={guess} onChange={handleChange} placeholder="Please enter a number" />
-        </label>
-        <button type="submit" className="guessSubmit button" id="submitguess">Submit</button>
-      </form>
-      {/* <p>{guess}</p> */}
-    </div>
-  );
-}
-
-export default Form
+export default Form;

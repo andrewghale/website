@@ -15,7 +15,8 @@
 }
 
 .about,
-.contact {
+.contact,
+.projects {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +40,7 @@
   }
 }
 .contact {
-  background-image: url(#{$path}contact-bg.svg);
+  background-image: url("#{$path}contact-bg.svg");
   @media screen and (max-width: $bp-tablet) {
     background-position-x: 40%;
   }

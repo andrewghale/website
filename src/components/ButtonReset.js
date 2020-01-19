@@ -12,14 +12,10 @@ export const Button = styled.button`
     outline: none;
 `;
 
-const ButtonReset = (props) => {
-    return (
-        <div>
-            <Button onClick={props.buttonFunction}>
-                Reset
-            </Button>
-        </div>
-    )
-}
+const ButtonReset = ({ buttonFunction }) => (
+	<Button onClick={buttonFunction}>
+		Reset
+	</Button>
+)
 
 export default ButtonReset
