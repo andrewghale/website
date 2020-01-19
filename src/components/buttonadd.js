@@ -12,10 +12,10 @@ export const Button = styled.button`
     outline: none;
 `;
 
-const ButtonSubtract = ({ buttonFunction }) => (
+const ButtonAdd = ({ buttonFunction }) => (
 	<Button onClick={buttonFunction}>
-			-
+			+
 	</Button>
 )
 
-export default ButtonSubtract
+export default ButtonAdd;

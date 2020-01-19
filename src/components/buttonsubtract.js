@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Button = styled.button`
     height: 100px;
@@ -12,10 +12,10 @@ export const Button = styled.button`
     outline: none;
 `;
 
-const ButtonReset = ({ buttonFunction }) => (
+const ButtonSubtract = ({ buttonFunction }) => (
 	<Button onClick={buttonFunction}>
-		Reset
+			-
 	</Button>
 )
 
-export default ButtonReset
+export default ButtonSubtract
