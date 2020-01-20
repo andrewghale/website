@@ -4,13 +4,15 @@ import Footer from '../components/footer';
 import Form from '../components/form';
 import Warning from '../components/warning';
 import Output from '../components/output';
+import OutputIsPrime from '../components/outputisprime';
+import OutputList from '../components/outputlist';
 import OutputPairs from '../components/outputpairs';
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 import "prismjs";
-// Uitls
-//import { isPrimeNumber, isDivisor } from '../utils/prime-number';
+// Utils
+// import isPrimeNumber from '../utils/prime-number';
 
 const NumberMachine = () => {
     const [ guess, setGuess ] = useState('');
@@ -25,7 +27,6 @@ const NumberMachine = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      console.log(guess);
     }
 
     return (
@@ -49,8 +50,10 @@ const NumberMachine = () => {
                     </div>
                     <Form guess={guess} submit={handleSubmit} change={handleChange} />
                     <Warning />
-                    <Output name="prime" text="Is Prime?" guess={guess} />
-                    <Output name="list" text="List of Divisors:" />
+                    <OutputIsPrime name="prime" text="Is Prime?" guess={guess}
+                        // methodGuess={guess}
+                    />
+                    <OutputList name="list" text="List of Divisors:" guess={guess}/>
                     <OutputPairs name="pairs-list" text="Pairs of Divisors:"/>
                     <Output name="reduced" text="Sum of Divisors:" />
                     <Output name="sqrt" text="Square Root:" />
