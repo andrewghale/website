@@ -1,21 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
 
-export const Button = styled.button`
-    height: 100px;
-    width: 100px;
-    font-size: 2rem;
-    border: none;
-    margin: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-`;
-
-const ButtonReset = ({ buttonFunction }) => (
-	<Button onClick={buttonFunction}>
+const ButtonReset = ({ buttonFunction, count }) => (
+    <button
+    className={ `counter-button ${count === 0 ? "red-bg" : "white-bg"}` }
+    onClick={buttonFunction}>
 		Reset
-	</Button>
+	</button>
 )
 
 export default ButtonReset
