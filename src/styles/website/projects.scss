@@ -2,13 +2,9 @@
   background-color: seagreen;
   .projects-text {
     display: flex;
-    // flex-direction: column;
     margin-top: 2rem;
     height: fit-content;
     width: 100%;
-    @media screen and (max-width: $bp-phone) {
-      flex-direction: column;
-    }
     .project-thumb {
       display: flex;
       align-items: flex-end;
@@ -28,7 +24,9 @@
         height: 180px;
       }
       @media screen and (max-width: $bp-phone) {
-        margin: 2rem auto;
+        margin: 0.5rem;
+        width: 130px;
+        height: 130px;
       }
       .title-container {
         display: flex;

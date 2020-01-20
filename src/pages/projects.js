@@ -15,9 +15,6 @@ const About = ({ match }) => {
             <div className="projects-text">
             <Link activeClassName='no-link' className="tag" to="/numbermachine">
               <div className="project-thumb number-machine">
-                {/* <div className="title-container">
-                  <h3 className="project-title">Number Machine</h3>
-                </div> */}
               </div>
             </Link>
             <Link activeClassName='no-link' className="tag" to="/counter">
