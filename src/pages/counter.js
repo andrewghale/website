@@ -6,6 +6,7 @@ import ButtonAdd from '../components/buttonadd';
 import ButtonSubtract from '../components/buttonsubtract';
 import ButtonReset from '../components/buttonreset';
 import thecount from '../assets/img/the_count_14aug.svg';
+import thecounttitle from '../assets/img/the-count-title.svg';
 
 const Counter = () => {
 	const [ count, setCount ] = useState(0);
@@ -15,7 +16,7 @@ const Counter = () => {
 	}
 
 	const handleDecrement = () => {
-		if (!count <= 1) {
+		if (count >= 1) {
 			setCount(count - 1);
 		}
 	}
@@ -29,12 +30,13 @@ const Counter = () => {
 			<Header pageName="numbermachine" />
 				<div className="counter-container">
 					<img className="thecountimg" src={thecount} alt="The Count"/>
+					<img className="the-count-title" src={thecounttitle} alt="The Count Title"/>
 					<div className="counter-all">
-					<div className="counter-buttons">
-						<ButtonAdd buttonFunction={handleIncrement} />
-						<ButtonSubtract buttonFunction={handleDecrement} />
-						<ButtonReset count={count} buttonFunction={handleReset} />
-					</div>
+						<div className="counter-buttons">
+							<ButtonAdd buttonFunction={handleIncrement} />
+							<ButtonSubtract buttonFunction={handleDecrement} />
+							<ButtonReset count={count} buttonFunction={handleReset} />
+						</div>
 						<DisplayCount count={count} />
 					</div>
 				</div>

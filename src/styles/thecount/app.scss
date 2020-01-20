@@ -10,8 +10,15 @@
 
 .thecountimg {
   height: auto;
-  max-height: 500px;
-  width: 75vw;
+  max-height: 450px;
+  width: 70vw;
+}
+
+.the-count-title {
+  height: 50px;
+  @media screen and (max-width: $bp-phone) {
+    height: 4vh;
+  }
 }
 
 .display-count {

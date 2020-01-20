@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ButtonSubtract = ({ buttonFunction }) => (
-	<button className="counter-button" onClick={buttonFunction}>
+	<button onClick={buttonFunction} className="counter-button">
 			-
 	</button>
 )
