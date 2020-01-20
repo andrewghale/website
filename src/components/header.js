@@ -6,7 +6,7 @@ import logo from '../assets/img/logo.svg';
 import Nav from './nav';
 
 const Header = ({ lightLogo, pageName }) => (
-    <header className={ `site-header ${pageName !== "number-machine" ? "" : "nm-header"}`}>
+    <header className={ `site-header ${pageName === "number-machine" ? "nm-header" : ""}`}>
         <div className="logo-holder">
             <NavLink to="/">
             <img
