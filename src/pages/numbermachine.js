@@ -50,11 +50,9 @@ const NumberMachine = () => {
                     </div>
                     <Form guess={guess} submit={handleSubmit} change={handleChange} />
                     <Warning />
-                    <OutputIsPrime name="prime" text="Is Prime?" guess={guess}
-                        // methodGuess={guess}
-                    />
+                    <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
                     <OutputList name="list" text="List of Divisors:" guess={guess}/>
-                    <OutputPairs name="pairs-list" text="Pairs of Divisors:"/>
+                    <OutputPairs name="pairs" text="Pairs of Divisors:" guess={guess} />
                     <Output name="reduced" text="Sum of Divisors:" />
                     <Output name="sqrt" text="Square Root:" />
                     <Output name="squared" text="Squared:" />
