@@ -22,11 +22,11 @@ const OutputPairs = ({ text, name, guess }) => {
 		let output = [];
 		for (let i = 0; i <= ((length / 2) - 1); i++) {
 				let lastItem = total[(length) - 1 - [i]];
-				output.push([`<li>${total[i]} and ${lastItem}</li>`]);
+				output.push([`${total[i]} and ${lastItem}, `]);
 		};
 		if (length % 2 !== 0) {
 				const squareRoot = Math.sqrt(total[length - 1]);
-				output.push([`<li>${squareRoot} and ${squareRoot}</li>`]);
+				output.push([`${squareRoot} and ${squareRoot}`]);
 		}
 		return output.join("");
 	}
