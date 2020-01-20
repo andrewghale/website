@@ -28,11 +28,15 @@ const Counter = () => {
 		<Fragment>
 			<Header pageName="numbermachine" />
 				<div className="counter-container">
-					<img src={thecount} alt="The Count"/>
-					<ButtonAdd buttonFunction={handleIncrement} />
-					<ButtonSubtract buttonFunction={handleDecrement} />
-					<ButtonReset count={count} buttonFunction={handleReset} />
-					<DisplayCount count={count} />
+					<img className="thecountimg" src={thecount} alt="The Count"/>
+					<div className="counter-all">
+					<div className="counter-buttons">
+						<ButtonAdd buttonFunction={handleIncrement} />
+						<ButtonSubtract buttonFunction={handleDecrement} />
+						<ButtonReset count={count} buttonFunction={handleReset} />
+					</div>
+						<DisplayCount count={count} />
+					</div>
 				</div>
 			<Footer pageName="numbermachine"/>
 		</Fragment>

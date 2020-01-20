@@ -2,20 +2,46 @@
   color: $black;
   background: linear-gradient(45deg, #4d3252 0%, #8d6c93 65%, #aa2338 100%);
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: calc(100vh);
 }
 
-.counter-button {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border: none;
-  margin: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
+.thecountimg {
+  height: auto;
+  max-height: 500px;
+  width: 75vw;
+}
+
+.display-count {
+  text-align: center;
+}
+
+.counter-buttons {
+  display: flex;
+  flex-direction: rows;
+  .counter-button {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border: none;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    @media screen and (max-width: $bp-tablet) {
+      width: 75px;
+      height: 75px;
+      margin: 0.5rem;
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: $bp-xs) {
+      width: 65px;
+      height: 65px;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .red-bg {
