@@ -9,16 +9,16 @@ const OutputIsPrime = ({ text, name, guess }) => {
 
 	const handleIsPrime = (methodGuess) => {
 		if ( methodGuess === 1 ) {
-				return ('false');
+				return ('False');
 		} else if ( methodGuess === 2 ) {
-				return ('true');
+				return ('True');
 		} else {
 				for ( let i = 2; i < methodGuess; i++ ) {
 						if ( methodGuess % i === 0 ) {
-								return ('false');
+								return ('False');
 						}
 				}
-			return ('true');
+			return ('True');
 		}
 	}
 

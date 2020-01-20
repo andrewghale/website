@@ -34,11 +34,9 @@ const OutputPairs = ({ text, name, guess }) => {
 	return (
 		<div>
 			<div className="output-label">{text}</div>
-			<div id={`output-${name}`} className="output">
-				<ul>
-					{handleMakeDivisorPairs(handleMakeDivisorArray(methodGuess))}
-				</ul>
-			</div>
+			<p id={`output-${name}`} className="output">
+				{handleMakeDivisorPairs(handleMakeDivisorArray(methodGuess))}
+			</p>
 		</div>
 	)
 }

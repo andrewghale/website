@@ -3,10 +3,15 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Form from '../components/form';
 import Warning from '../components/warning';
-import Output from '../components/output';
+// import Output from '../components/output';
 import OutputIsPrime from '../components/outputisprime';
 import OutputList from '../components/outputlist';
 import OutputPairs from '../components/outputpairs';
+// import OutputSum from '../components/outputsum';
+import OutputSqrt from '../components/outputsqrt';
+import OutputSquared from '../components/outputsquared';
+import OutputCbrt from '../components/outputcbrt';
+import OutputCubed from '../components/outputcubed';
 import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
@@ -53,11 +58,11 @@ const NumberMachine = () => {
                     <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
                     <OutputList name="list" text="List of Divisors:" guess={guess}/>
                     <OutputPairs name="pairs" text="Pairs of Divisors:" guess={guess} />
-                    <Output name="reduced" text="Sum of Divisors:" />
-                    <Output name="sqrt" text="Square Root:" />
-                    <Output name="squared" text="Squared:" />
-                    <Output name="cbrt" text="Cube Root:" />
-                    <Output name="cubed" text="Cubed:" />
+                    {/* <OutputSum name="reduced" text="Sum of Divisors:" /> */}
+                    <OutputSqrt name="sqrt" text="Square Root:" guess={guess} />
+                    <OutputSquared name="squared" text="Squared:" guess={guess} />
+                    <OutputCbrt name="cbrt" text="Cube Root:" guess={guess} />
+                    <OutputCubed name="cubed" text="Cubed:" guess={guess} />
                 </div>
                 <div className="container">
                 <div className="explain-container">
