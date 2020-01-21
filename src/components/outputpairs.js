@@ -17,12 +17,13 @@ const OutputPairs = ({ text, name, guess }) => {
     return total;
 	}
 
+	let output = [];
+
 	const handleMakeDivisorPairs = (total) => {
 		const { length } = total;
-		let output = [];
 		for (let i = 0; i <= ((length / 2) - 1); i++) {
 				let lastItem = total[(length) - 1 - [i]];
-				output.push([`${total[i]} and ${lastItem}, `]);
+				output.push([`${total[i]} and ${lastItem}`]);
 		};
 		if (length % 2 !== 0) {
 				const squareRoot = Math.sqrt(total[length - 1]);
@@ -31,12 +32,14 @@ const OutputPairs = ({ text, name, guess }) => {
 		return output.join("");
 	}
 
+	handleMakeDivisorPairs(handleMakeDivisorArray(methodGuess));
+
 	return (
 		<div>
 			<div className="output-label">{text}</div>
-			<p id={`output-${name}`} className="output">
-				{handleMakeDivisorPairs(handleMakeDivisorArray(methodGuess))}
-			</p>
+			<ul id={`output-${name}`} className="pairs-list output">
+				{output.map(item => <li key={item.toString()} className="output output-card">{item}</li>)}
+			</ul>
 		</div>
 	)
 }

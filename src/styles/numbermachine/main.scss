@@ -255,6 +255,9 @@ input[type="number"] {
       font-size: 1rem;
       padding: 0.5rem 1rem;
     }
+    .output-card {
+      border-radius: 10px;
+    }
   }
 }
 
@@ -274,15 +277,15 @@ input[type="number"] {
   }
 }
 
-// .output-pairs {
-//   margin-bottom: 1rem;
-// }
+.output-pairs {
+  margin-bottom: 1rem;
+}
 
-// .transition {
-//   transform: scale(1.07);
-//   transition: all ease-in-out 0.1s;
-// }
+.transition {
+  transform: scale(1.07);
+  transition: all ease-in-out 0.1s;
+}
 
-// .iteration-margin {
-//   margin-right: 1rem;
-// }
+.iteration-margin {
+  margin-right: 1rem;
+}
