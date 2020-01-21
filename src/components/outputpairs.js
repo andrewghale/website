@@ -7,6 +7,8 @@ const OutputPairs = ({ text, name, guess }) => {
 		setMethodGuess(guess)
 	}, [guess])
 
+	let output = [];
+
 	const handleMakeDivisorArray = (methodGuess) => {
     let total = [];
     for (let i = 1; i <= methodGuess; i++) {
@@ -16,8 +18,6 @@ const OutputPairs = ({ text, name, guess }) => {
     };
     return total;
 	}
-
-	let output = [];
 
 	const handleMakeDivisorPairs = (total) => {
 		const { length } = total;

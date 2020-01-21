@@ -27,11 +27,16 @@ const NumberMachine = () => {
     }, [])
 
     const handleChange = (e) => {
-      setGuess(e.target.value);
+        if (e.target.value <= 999999) {
+            setGuess(e.target.value);
+            console.log(e.target.value);
+        }
     }
 
     const handleSubmit = (e) => {
-      e.preventDefault();
+        e.preventDefault();
+        // setGuess(guess);
+        // console.log(guess);
     }
 
     return (
@@ -53,7 +58,11 @@ const NumberMachine = () => {
                             <p>/andrewghale</p>
                         </a>
                     </div>
-                    <Form guess={guess} submit={handleSubmit} change={handleChange} />
+                    <Form
+                        guess={guess}
+                        submit={handleSubmit}
+                        change={handleChange}
+                    />
                     <Warning />
                     <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
                     <OutputList name="list" text="List of Divisors:" guess={guess}/>
