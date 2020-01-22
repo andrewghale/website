@@ -15,7 +15,7 @@ const Form = ({ guess, submit, change }) => (
           className="guessField"
           value={guess}
           onChange={change}
-          onKeyDown={ (evt) => evt.key === '.' && evt.preventDefault()  }
+          onKeyDown={ (evt) => evt.key === '.' && evt.preventDefault() }
           min="0"
         />
       </label>
@@ -26,13 +26,6 @@ const Form = ({ guess, submit, change }) => (
         >
           👈
         </span>
-      {/* <button
-        type="submit"
-        className="guessSubmit button"
-        id="submitguess"
-        >
-        Submit
-      </button> */}
     </form>
 );
 

@@ -1,0 +1,23 @@
+.main-form {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $bp-tablet) {
+    margin: 2rem 0;
+  }
+  @media screen and (max-width: $bp-phone) {
+    margin: 0;
+  }
+  .guessField {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    border: $border;
+    border-radius: ($border-radius) * 2;
+    width: 135px;
+    @media screen and (max-width: $bp-phone) {
+      font-size: 4vw;
+      width: 100px;
+      padding: 0.6rem;
+    }
+  }
+}

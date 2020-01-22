@@ -29,7 +29,7 @@ const Counter = () => {
 		<Fragment>
 			<Header pageName="numbermachine" />
 				<div className="counter-container">
-					<img className="thecountimg" src={thecount} alt="The Count"/>
+					<img className="the-count-img" src={thecount} alt="The Count"/>
 					<img className="the-count-title" src={thecounttitle} alt="The Count Title"/>
 					<div className="counter-all">
 						<div className="counter-buttons">

@@ -1,0 +1,9 @@
+.nm-footer {
+  background-image: url($nm-background);
+  background-color: #dee3de;
+  background-attachment: fixed;
+  position: relative;
+  .copyright {
+    color: $black;
+  }
+}

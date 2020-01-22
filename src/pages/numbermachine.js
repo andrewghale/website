@@ -2,7 +2,6 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Form from '../components/form';
-import Warning from '../components/warning';
 // import Output from '../components/output';
 import OutputIsPrime from '../components/outputisprime';
 import OutputList from '../components/outputlist';
@@ -60,10 +59,8 @@ const NumberMachine = () => {
                     <p className="type-in">Type in a number!</p>
                     <Form
                         guess={guess}
-                        // submit={handleSubmit}
                         change={handleChange}
                     />
-                    <Warning />
                     <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
                     <OutputList name="list" text="List of Divisors:" guess={guess}/>
                     <OutputPairs name="pairs" text="Pairs of Divisors:" guess={guess} />
