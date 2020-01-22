@@ -261,7 +261,7 @@ input[type="number"] {
 }
 
 .output-small {
-  max-width: 50%;
+  max-width: 75%;
   @media screen and (max-width: $bp-tablet) {
     max-width: 100%;
   }
