@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { handleMakeDivisorArrayForPairs } from '../utils';
 const OutputPairs = ({ text, name, guess }) => {
 	const [methodGuess, setMethodGuess] = useState('')
 
@@ -8,16 +8,6 @@ const OutputPairs = ({ text, name, guess }) => {
 	}, [guess])
 
 	let output = [];
-
-	const handleMakeDivisorArray = (methodGuess) => {
-    let total = [];
-    for (let i = 1; i <= methodGuess; i++) {
-        if (methodGuess % i === 0) {
-            total.push(i);
-        };
-    };
-    return total;
-	}
 
 	const handleMakeDivisorPairs = (total) => {
 		const { length } = total;
@@ -32,7 +22,7 @@ const OutputPairs = ({ text, name, guess }) => {
 		return output.join("");
 	}
 
-	handleMakeDivisorPairs(handleMakeDivisorArray(methodGuess));
+	handleMakeDivisorPairs(handleMakeDivisorArrayForPairs(methodGuess));
 
 	return (
 		<div>

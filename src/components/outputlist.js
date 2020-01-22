@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { handleMakeDivisorArray } from '../utils';
 
 const OutputList = ({ text, name, guess }) => {
 	const [methodGuess, setMethodGuess] = useState('')
@@ -6,16 +7,6 @@ const OutputList = ({ text, name, guess }) => {
 	useEffect(() => {
 		setMethodGuess(guess)
 	}, [guess])
-
-  const handleMakeDivisorArray = (methodGuess) => {
-    let total = [];
-    for (let i = 1; i <= methodGuess; i++) {
-        if (methodGuess % i === 0) {
-            total.push(`${i}`);
-        };
-    };
-    return total.join(", ");
-}
 
 	return (
 		<div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { handleIsPrime } from '../utils';
 
 const OutputIsPrime = ({ text, name, guess }) => {
 
@@ -7,24 +8,6 @@ const OutputIsPrime = ({ text, name, guess }) => {
 	useEffect(() => {
 		setMethodGuess(guess)
 	}, [guess])
-
-	const handleIsPrime = (methodGuess) => {
-		// eslint-disable-next-line
-		if (methodGuess == 0) {
-			return (null);
-		} else if ( methodGuess === 1 ) {
-				return ('False');
-		} else if ( methodGuess === 2 ) {
-				return ('True');
-		} else {
-				for ( let i = 2; i < methodGuess; i++ ) {
-						if ( methodGuess % i === 0 ) {
-								return ('False');
-						}
-				}
-			return ('True');
-		}
-	}
 
 	return (
 		<div>

@@ -56,10 +56,10 @@ export const codeStringArray = `
       };
       return total.join(", ");
   }
-  // if inputValue is 12,
+  // if input is 12,
   // total = [1, 2, 3, 4, 6, 12]
 
-  // if inputValue is 319,
+  // if input is 319,
   // total = [1, 11, 29, 319]
 
 `;
@@ -82,3 +82,41 @@ export const codeStringPrime = `
 `;
 
 export const date = new Date().getFullYear();
+
+export const handleMakeDivisorArray = (props) => {
+  let total = [];
+  for (let i = 1; i <= props; i++) {
+      if (props % i === 0) {
+          total.push(i);
+      };
+  };
+  return total.join(", ");
+}
+
+export const handleIsPrime = (props) => {
+  // eslint-disable-next-line
+  if ( props == 0 ) {
+    return (null);
+  } else if ( props === 1 ) {
+      return ('False');
+  } else if ( props === 2 ) {
+      return ('True');
+  } else {
+      for ( let i = 2; i < props; i++ ) {
+          if ( props % i === 0 ) {
+              return ('False');
+          }
+      }
+    return ('True');
+  }
+}
+
+export const handleMakeDivisorArrayForPairs = (props) => {
+  let total = [];
+  for (let i = 1; i <= props; i++) {
+      if (props % i === 0) {
+          total.push(i);
+      };
+  };
+  return total;
+}
