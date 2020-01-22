@@ -65,19 +65,20 @@ export const codeStringArray = `
 `;
 
 export const codeStringPrime = `
-    const testPrime = (input) => {
-        if ( input === 1 ) {
-            return ('false');
-        } else if ( input === 2 ) {
-            return ('true');
-        } else {
-            for ( let i = 2; i < input; i++ ) {
-                if ( input % i === 0 ) {
-                    return ('false');
-                }
-            }
-        return ('true');
-    }
-    `;
+  const testPrime = (input) => {
+      if ( input === 1 ) {
+          return ('false');
+      } else if ( input === 2 ) {
+          return ('true');
+      } else {
+          for ( let i = 2; i < input; i++ ) {
+              if ( input % i === 0 ) {
+                  return ('false');
+              }
+          }
+      return ('true');
+  }
+
+`;
 
 export const date = new Date().getFullYear();
