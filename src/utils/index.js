@@ -56,8 +56,11 @@ export const codeStringArray = `
       };
       return total.join(", ");
   }
-  // if inputValue is 12, total = [1, 2, 3, 4, 6, 12]
-  // if inputValue is 319, total = [1, 11, 29, 319]
+  // if inputValue is 12,
+  // total = [1, 2, 3, 4, 6, 12]
+
+  // if inputValue is 319,
+  // total = [1, 11, 29, 319]
 
 `;
 

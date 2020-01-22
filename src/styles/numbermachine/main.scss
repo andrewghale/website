@@ -51,7 +51,7 @@ input[type="number"] {
     position: absolute;
     img {
       max-width: 500px;
-      opacity: 0.3;
+      opacity: 0.1;
     }
   }
   .coffee-ring-bottom-right {
@@ -105,7 +105,7 @@ input[type="number"] {
           font-size: 1rem;
         }
         .code-container {
-          font-size: 2.1vw;
+          font-size: 2.5vw;
         }
       }
     }
@@ -254,7 +254,7 @@ input[type="number"] {
     @media screen and (max-width: $bp-phone) {
       font-size: 1rem;
       padding: 0.2rem 0.5rem;
-      min-height: 30px;
+      min-height: 40px;
     }
     .output-card {
       border-radius: 10px;
