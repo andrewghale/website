@@ -173,7 +173,7 @@ input[type="number"] {
         width: 135px;
         @media screen and (max-width: $bp-phone) {
           font-size: 4vw;
-          width: auto;
+          width: 100px;
           padding: 0.6rem;
         }
       }
@@ -240,18 +240,30 @@ input[type="number"] {
   .output {
     margin-top: 0;
     background-color: $white;
-    padding: 1rem;
+    padding: 0.6rem;
     border: 2px solid black;
-    border-radius: $border-radius;
+    border-radius: $border-radius * 2;
     border-top-left-radius: 0;
     font-size: 2rem;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 1.5rem;
+    }
     @media screen and (max-width: $bp-phone) {
       font-size: 1rem;
       padding: 0.5rem 1rem;
     }
     .output-card {
       border-radius: 10px;
+      padding: 0.1rem 0.2rem;
+      width: fit-content;
     }
+  }
+}
+
+.output-small {
+  max-width: 50%;
+  @media screen and (max-width: $bp-tablet) {
+    max-width: 100%;
   }
 }
 
@@ -286,6 +298,9 @@ input[type="number"] {
 
 .point-emoji {
   font-size: 60px;
+  @media screen and (max-width: $bp-phone) {
+    font-size: 40px;
+  }
 }
 
 .point-right {

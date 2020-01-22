@@ -25,7 +25,7 @@ const OutputIsPrime = ({ text, name, guess }) => {
 	return (
 		<div>
 			<div className="output-label">{text}</div>
-			<p id={`output-${name}`} className="output">
+			<p id={`output-${name}`} className="output output-small">
 				{handleIsPrime(methodGuess)}
 			</p>
 		</div>

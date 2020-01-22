@@ -23,13 +23,13 @@ const NumberMachine = () => {
     const [ guess, setGuess ] = useState('');
 
     useEffect(() => {
-        console.log('LOADED')
+        // console.log('LOADED')
     }, [])
 
     const handleChange = (e) => {
         if (e.target.value <= 999999) {
             setGuess(e.target.value);
-            console.log(e.target.value);
+            // console.log(e.target.value);
         }
     }
 

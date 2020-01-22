@@ -10,8 +10,8 @@ const OutputSqrt = ({ text, name, guess }) => {
 	return (
 		<div>
 			<div className="output-label">{text}</div>
-			<p id={`output-${name}`} className="output">
-				{Math.sqrt(methodGuess)}
+			<p id={`output-${name}`} className="output output-small">
+				{Math.sqrt(methodGuess).toFixed(7)}
 			</p>
 		</div>
 	)

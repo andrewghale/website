@@ -38,7 +38,7 @@ const OutputPairs = ({ text, name, guess }) => {
 		<div>
 			<div className="output-label">{text}</div>
 			<ul id={`output-${name}`} className="pairs-list output">
-				{output.map(item => <li key={item.toString()} className="output output-card">{item}</li>)}
+				{output.map(item => <li key={item.toString()} className="output-card">{item}</li>)}
 			</ul>
 		</div>
 	)
