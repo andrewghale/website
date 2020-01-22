@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 const OutputIsPrime = ({ text, name, guess }) => {
-	const [methodGuess, setMethodGuess] = useState('')
+
+	const [ methodGuess, setMethodGuess ] = useState('')
 
 	useEffect(() => {
 		setMethodGuess(guess)
 	}, [guess])
 
 	const handleIsPrime = (methodGuess) => {
-		if ( methodGuess === 1 ) {
+		if (methodGuess == 0) {
+			return (null);
+		} else if ( methodGuess === 1 ) {
 				return ('False');
 		} else if ( methodGuess === 2 ) {
 				return ('True');
