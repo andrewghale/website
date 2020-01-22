@@ -33,11 +33,11 @@ const NumberMachine = () => {
         }
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // setGuess(guess);
-        // console.log(guess);
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     // setGuess(guess);
+    //     // console.log(guess);
+    // }
 
     return (
         <Fragment>
@@ -60,7 +60,7 @@ const NumberMachine = () => {
                     </div>
                     <Form
                         guess={guess}
-                        submit={handleSubmit}
+                        // submit={handleSubmit}
                         change={handleChange}
                     />
                     <Warning />

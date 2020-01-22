@@ -166,17 +166,11 @@ input[type="number"] {
       }
       .guessField {
         padding: 1rem;
-        margin-right: 1rem;
+        margin: 0 1rem;
         font-size: 2rem;
         border: $border;
-        border-radius: $border-radius;
-        width: 450px;
-        ::placeholder {
-          color: red;
-        }
-        @media screen and (max-width: $bp-tablet) {
-          width: 300px;
-        }
+        border-radius: ($border-radius) * 2;
+        width: 135px;
         @media screen and (max-width: $bp-phone) {
           font-size: 4vw;
           width: auto;
@@ -288,4 +282,46 @@ input[type="number"] {
 
 .iteration-margin {
   margin-right: 1rem;
+}
+
+.point-emoji {
+  font-size: 60px;
+}
+
+.point-right {
+  animation: point-right 1s ease-in-out 10;
+}
+
+.point-left {
+  animation: point-left 1s ease-in-out 10;
+}
+
+@keyframes point-right {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes point-left {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(-10px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
 }
