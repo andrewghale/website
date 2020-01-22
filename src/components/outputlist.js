@@ -11,10 +11,10 @@ const OutputList = ({ text, name, guess }) => {
     let total = [];
     for (let i = 1; i <= methodGuess; i++) {
         if (methodGuess % i === 0) {
-            total.push(`${i}, `);
+            total.push(`${i}`);
         };
     };
-    return total;
+    return total.join(", ");
 }
 
 	return (
