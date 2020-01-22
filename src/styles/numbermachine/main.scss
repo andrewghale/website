@@ -312,40 +312,40 @@ input[type="number"] {
   }
 }
 
-.point-right {
-  animation: point-right 1s ease-in-out 10;
-}
+// .point-right {
+//   animation: point-right 1s ease-in-out 10;
+// }
 
-.point-left {
-  animation: point-left 1s ease-in-out 10;
-}
+// .point-left {
+//   animation: point-left 1s ease-in-out 10;
+// }
 
-@keyframes point-right {
-  0% {
-    transform: translate(0px);
-  }
-  25% {
-    transform: translate(10px);
-  }
-  50% {
-    transform: translate(0px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
+// @keyframes point-right {
+//   0% {
+//     transform: translate(0px);
+//   }
+//   25% {
+//     transform: translate(10px);
+//   }
+//   50% {
+//     transform: translate(0px);
+//   }
+//   100% {
+//     transform: translate(0px);
+//   }
+// }
 
-@keyframes point-left {
-  0% {
-    transform: translate(0px);
-  }
-  25% {
-    transform: translate(-10px);
-  }
-  50% {
-    transform: translate(0px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
+// @keyframes point-left {
+//   0% {
+//     transform: translate(0px);
+//   }
+//   25% {
+//     transform: translate(-10px);
+//   }
+//   50% {
+//     transform: translate(0px);
+//   }
+//   100% {
+//     transform: translate(0px);
+//   }
+// }
