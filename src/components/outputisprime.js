@@ -9,6 +9,7 @@ const OutputIsPrime = ({ text, name, guess }) => {
 	}, [guess])
 
 	const handleIsPrime = (methodGuess) => {
+		// eslint-disable-next-line
 		if (methodGuess == 0) {
 			return (null);
 		} else if ( methodGuess === 1 ) {

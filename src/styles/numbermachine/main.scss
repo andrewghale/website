@@ -163,6 +163,9 @@ input[type="number"] {
       @media screen and (max-width: $bp-tablet) {
         margin: 2rem 0;
       }
+      @media screen and (max-width: $bp-phone) {
+        margin: 0;
+      }
       .guessField {
         padding: 1rem;
         margin: 0 1rem;

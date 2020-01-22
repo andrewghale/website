@@ -28,7 +28,7 @@ const NumberMachine = () => {
     const [ guess, setGuess ] = useState('');
 
     useEffect(() => {
-        console.log('LOADED')
+        // console.log('LOADED')
     }, [])
 
     const handleChange = (e) => {
