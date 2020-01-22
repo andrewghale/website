@@ -15,8 +15,8 @@ const Form = ({ guess, submit, change }) => (
           className="guessField"
           value={guess}
           onChange={change}
+          onKeyDown={ (evt) => evt.key === '.' && evt.preventDefault()  }
           min="0"
-          // placeholder="Please enter a number"
         />
       </label>
       <span
