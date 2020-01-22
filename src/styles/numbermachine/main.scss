@@ -160,7 +160,7 @@ input[type="number"] {
     .main-form {
       display: flex;
       justify-content: center;
-      margin: 3rem 0 0 0;
+      // margin: 3rem 0 0 0;
       @media screen and (max-width: $bp-tablet) {
         margin: 2rem 0;
       }
@@ -294,6 +294,11 @@ input[type="number"] {
 
 .iteration-margin {
   margin-right: 1rem;
+}
+
+.type-in {
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .point-emoji {

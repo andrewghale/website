@@ -50,7 +50,7 @@ const NumberMachine = () => {
                 total.push(i);
             };
         };
-        return total;
+        return total.join(", ");
     }
     // if inputValue is 12, total = [1, 2, 3, 4, 6, 12]
     // if inputValue is 319, total = [1, 11, 29, 319]
@@ -91,6 +91,7 @@ const NumberMachine = () => {
                             <p>/andrewghale</p>
                         </a>
                     </div>
+                    <p className="type-in">Type in a number!</p>
                     <Form
                         guess={guess}
                         // submit={handleSubmit}
