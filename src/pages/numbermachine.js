@@ -16,6 +16,8 @@ import title from '../assets/img/numbermachine/title.svg';
 import githublogo from '../assets/img/numbermachine/github.svg';
 import coffeeRing from '../assets/img/numbermachine/coffee-ring.png';
 
+import { codeStringArray, codeStringPrime } from '../utils';
+
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { kimbieDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
@@ -26,7 +28,7 @@ const NumberMachine = () => {
     const [ guess, setGuess ] = useState('');
 
     useEffect(() => {
-        // console.log('LOADED')
+        console.log('LOADED')
     }, [])
 
     const handleChange = (e) => {
@@ -35,42 +37,6 @@ const NumberMachine = () => {
             // console.log(e.target.value);
         }
     }
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     // setGuess(guess);
-    //     // console.log(guess);
-    // }
-
-    const codeStringArray = `
-    const divCalculator = (input) => {
-        let total = [];
-        for (let i = 1; i <= input; i++) {
-            if (input % i === 0) {
-                total.push(i);
-            };
-        };
-        return total.join(", ");
-    }
-    // if inputValue is 12, total = [1, 2, 3, 4, 6, 12]
-    // if inputValue is 319, total = [1, 11, 29, 319]
-    `;
-
-    const codeStringPrime = `
-    const testPrime = (input) => {
-        if ( input === 1 ) {
-            return ('false');
-        } else if ( input === 2 ) {
-            return ('true');
-        } else {
-            for ( let i = 2; i < input; i++ ) {
-                if ( input % i === 0 ) {
-                    return ('false');
-                }
-            }
-        return ('true');
-    }
-    `;
 
     return (
         <Fragment>

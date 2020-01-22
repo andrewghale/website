@@ -46,4 +46,35 @@ export const socialLinksWhite = [
   }
 ];
 
+export const codeStringArray = `
+  const divCalculator = (input) => {
+      let total = [];
+      for (let i = 1; i <= input; i++) {
+          if (input % i === 0) {
+              total.push(i);
+          };
+      };
+      return total.join(", ");
+  }
+  // if inputValue is 12, total = [1, 2, 3, 4, 6, 12]
+  // if inputValue is 319, total = [1, 11, 29, 319]
+
+`;
+
+export const codeStringPrime = `
+    const testPrime = (input) => {
+        if ( input === 1 ) {
+            return ('false');
+        } else if ( input === 2 ) {
+            return ('true');
+        } else {
+            for ( let i = 2; i < input; i++ ) {
+                if ( input % i === 0 ) {
+                    return ('false');
+                }
+            }
+        return ('true');
+    }
+    `;
+
 export const date = new Date().getFullYear();
