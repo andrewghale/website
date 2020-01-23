@@ -1,5 +1,5 @@
 .to-do-list {
-  font-family: "Reenie Beanie", cursive;
+  font-family: "Annie Use Your Telescope", cursive;
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -11,6 +11,14 @@
   background-color: #dee3de;
   background-attachment: fixed;
   overflow-y: scroll;
+  @media screen and (max-width: $bp-tablet) {
+    margin: 164px 0 0 0;
+    min-height: 800px;
+  }
+  @media screen and (max-width: $bp-phone) {
+    margin: 80px 0 0 0;
+    min-height: 800px;
+  }
   .notepad {
     width: 500px;
     padding: 1rem;
