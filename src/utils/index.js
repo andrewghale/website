@@ -56,6 +56,7 @@ export const codeStringArray = `
       };
       return total.join(", ");
   }
+
   // if input is 12,
   // total = [1, 2, 3, 4, 6, 12]
 

@@ -2,7 +2,7 @@ import React, {Fragment, useState } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import uuid4 from "uuid4";
-import "../styles/todonts/app.scss";
+import "../styles/todolist/app.scss";
 
 const ToDonts = () => {
   const [todonts, setTodonts] = useState([
@@ -45,10 +45,10 @@ const ToDonts = () => {
 
   return (
     <Fragment>
-      <Header />
-        <div className="todontlist">
-          <h1>To-Don't List</h1>
-          <h3>Things to NOT do</h3>
+      <Header pageName="numbermachine" />
+        <div className="to-do-list">
+          <h1>To-Do List</h1>
+          <h3>Things to do</h3>
           <p className="explanation">Click on an item to remove it</p>
           { todonts.map(({ id, todonts }) => (
             <p onClick={() => handleRemove(id)} key={id}>{todonts}</p>
@@ -63,7 +63,7 @@ const ToDonts = () => {
             </form>
           </div>
         </div>
-      <Footer />
+      <Footer pageName="numbermachine" />
     </Fragment>
   );
 }

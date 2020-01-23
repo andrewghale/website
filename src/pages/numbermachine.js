@@ -41,61 +41,61 @@ const NumberMachine = () => {
         <Fragment>
             <Header pageName="number-machine"/>
             <div className="page-container">
-            <div className="coffee-ring coffee-ring-bottom-right">
-                <img src={coffeeRing} alt="coffee ring" />
-            </div>
-            <div className="coffee-ring coffee-ring-bottom-left">
-                <img src={coffeeRing} alt="coffee ring" />
-            </div>
-                <div className="container">
-                    <img className="title" src={title} alt="Number Machine" />
-                    <p className="created-by">Created by Andrew Hale</p>
-                    <div id="github" className="github">
-                        <a className="github-link" href="https://github.com/andrewghale" target="_blank" rel="noopener noreferrer">
-                            <img src={githublogo} alt="github logo" />
-                            <p>/andrewghale</p>
-                        </a>
-                    </div>
-                    <p className="type-in">Type in a number!</p>
-                    <Form
-                        guess={guess}
-                        change={handleChange}
-                    />
-                    <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
-                    <OutputList name="list" text="List of Divisors:" guess={guess}/>
-                    <OutputPairs name="pairs" text="Pairs of Divisors:" guess={guess} />
-                    {/* <OutputSum name="reduced" text="Sum of Divisors:" /> */}
-                    <OutputSqrt name="sqrt" text="Square Root:" guess={guess} />
-                    <OutputSquared name="squared" text="Squared:" guess={guess} />
-                    <OutputCbrt name="cbrt" text="Cube Root:" guess={guess} />
-                    <OutputCubed name="cubed" text="Cubed:" guess={guess} />
+                <div className="coffee-ring coffee-ring-bottom-right">
+                    <img src={coffeeRing} alt="coffee ring" />
                 </div>
-                <div className="container">
-                <div className="explain-container">
-                    <h3 className="explain-title">How (Some Of) It Works</h3>
-                    <h4 className="explain-subtitle">Creating the array</h4>
-                    <p>This function checks whether the <code className="language-javascript">input</code> value can be divided by the current iteration <code className="language-javascript">[i]</code> without leaving
-                        a remainder - if it can, then the number <code className="language-javascript">[i]</code> is added on to the end of an array named <code className="language-javascript">total</code>.</p>
-                    <div className="code-container">
-                    <SyntaxHighlighter language="javascript" style={kimbieDark}>
-                        {codeStringArray}
-                    </SyntaxHighlighter>
+                <div className="coffee-ring coffee-ring-bottom-left">
+                    <img src={coffeeRing} alt="coffee ring" />
+                </div>
+                    <div className="container">
+                        <img className="title" src={title} alt="Number Machine" />
+                        <p className="created-by">Created by Andrew Hale</p>
+                        <div id="github" className="github">
+                            <a className="github-link" href="https://github.com/andrewghale" target="_blank" rel="noopener noreferrer">
+                                <img src={githublogo} alt="github logo" />
+                                <p>/andrewghale</p>
+                            </a>
+                        </div>
+                        <p className="type-in">Type in a number!</p>
+                        <Form
+                            guess={guess}
+                            change={handleChange}
+                        />
+                        <OutputIsPrime name="prime" text="Is Prime?" guess={guess} />
+                        <OutputList name="list" text="List of Divisors:" guess={guess}/>
+                        <OutputPairs name="pairs" text="Pairs of Divisors:" guess={guess} />
+                        {/* <OutputSum name="reduced" text="Sum of Divisors:" /> */}
+                        <OutputSqrt name="sqrt" text="Square Root:" guess={guess} />
+                        <OutputSquared name="squared" text="Squared:" guess={guess} />
+                        <OutputCbrt name="cbrt" text="Cube Root:" guess={guess} />
+                        <OutputCubed name="cubed" text="Cubed:" guess={guess} />
                     </div>
-                    <h4 className="explain-subtitle">Prime Numbers</h4>
-                    <p>
-                        This function checks to see if the <code className="language-javascript">input</code> value is a prime number.
-                    </p>
-                    <p>
-                        Inputting 1 and 2 will simply return "False" and "True" respectively but for any number greater than 2, if it can be divided by the current iteration <code className="language-javascript">[i]</code>,
-                        it won't be a prime number, so the output is false.
-                    </p>
-                    <div className="code-container">
-                    <SyntaxHighlighter language="javascript" style={kimbieDark}>
-                        {codeStringPrime}
-                    </SyntaxHighlighter>
+                    <div className="container">
+                    <div className="explain-container">
+                        <h3 className="explain-title">How (Some Of) It Works</h3>
+                        <h4 className="explain-subtitle">Creating the array</h4>
+                        <p>This function checks whether the <code className="language-javascript">input</code> value can be divided by the current iteration <code className="language-javascript">[i]</code> without leaving
+                            a remainder - if it can, then the number <code className="language-javascript">[i]</code> is added on to the end of an array named <code className="language-javascript">total</code>.</p>
+                        <div className="code-container">
+                        <SyntaxHighlighter language="javascript" style={kimbieDark}>
+                            {codeStringArray}
+                        </SyntaxHighlighter>
+                        </div>
+                        <h4 className="explain-subtitle">Prime Numbers</h4>
+                        <p>
+                            This function checks to see if the <code className="language-javascript">input</code> value is a prime number.
+                        </p>
+                        <p>
+                            Inputting 1 and 2 will simply return "False" and "True" respectively but for any number greater than 2, if it can be divided by the current iteration <code className="language-javascript">[i]</code>,
+                            it won't be a prime number, so the output is false.
+                        </p>
+                        <div className="code-container">
+                        <SyntaxHighlighter language="javascript" style={kimbieDark}>
+                            {codeStringPrime}
+                        </SyntaxHighlighter>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <Footer pageName="number-machine"/>
         </Fragment>

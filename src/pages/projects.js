@@ -14,13 +14,20 @@ const About = ({ match }) => {
             <h1 className="page-title">Projects</h1>
             <div className="projects-text">
             <Link to="/numbermachine">
-              <div className="project-thumb number-machine" />
+              <div className="project-thumb number-machine-thumb" />
             </Link>
             <Link to="/counter">
-              <div className="project-thumb counter">
+              <div className="project-thumb counter-thumb">
                 <div className="title-container">
                   <h3 className="project-title">The Count</h3>
                 </div>
+              </div>
+            </Link>
+            <Link to="/todolist">
+              <div className="project-thumb to-do-list-thumb">
+                {/* <div className="title-container">
+                  <h3 className="project-title">To Do List</h3>
+                </div> */}
               </div>
             </Link>
             </div>
