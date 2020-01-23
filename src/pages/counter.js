@@ -29,15 +29,21 @@ const Counter = () => {
 		<Fragment>
 			<Header pageName="numbermachine" />
 				<div className="counter-container">
-					<img className="the-count-img" src={thecount} alt="The Count"/>
-					<img className="the-count-title" src={thecounttitle} alt="The Count Title"/>
-					<div className="counter-all">
-						<div className="counter-buttons">
-							<ButtonAdd buttonFunction={handleIncrement} />
-							<ButtonSubtract buttonFunction={handleDecrement} />
-							<ButtonReset count={count} buttonFunction={handleReset} />
+					<div className="the-count">
+						<img className="the-count-img" src={thecount} alt="The Count"/>
+						<img className="the-count-title" src={thecounttitle} alt="The Count Title"/>
+						<div className="counter-all">
+							<div className="counter-buttons">
+								<ButtonAdd buttonFunction={handleIncrement} />
+								<ButtonSubtract buttonFunction={handleDecrement} />
+								<ButtonReset count={count} buttonFunction={handleReset} />
+							</div>
+							<DisplayCount count={count} />
 						</div>
-						<DisplayCount count={count} />
+					</div>
+					<div className="explain">
+						<p>This is a simple counter app for learning React basics.</p>
+						<p>You can increment, decrement and reset the counter value.</p>
 					</div>
 				</div>
 			<Footer pageName="numbermachine"/>
