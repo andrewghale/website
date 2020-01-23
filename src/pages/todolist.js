@@ -4,68 +4,73 @@ import Footer from '../components/footer';
 import uuid4 from "uuid4";
 import "../styles/todolist/app.scss";
 
-const ToDonts = () => {
-  const [todonts, setTodonts] = useState([
+const ToDos = () => {
+  const [todos, setTodos] = useState([
     {
       id: uuid4(),
-      todonts: 'One'
+      todos: 'Go for a run'
     },
     {
       id: uuid4(),
-      todonts: 'Two'
+      todos: 'Cook dinner'
     },
     {
       id: uuid4(),
-      todonts: 'Three'
+      todos: 'Scream into the void'
+    },
+    {
+      id: uuid4(),
+      todos: 'Buy cat food'
     }
   ])
 
-  const [todontInput, settodontInput] = useState('');
+  const [todoInput, settodoInput] = useState('');
 
   const handleSubmit = (e) => {
     // Stop form from submitting
     e.preventDefault();
-    setTodonts([
-      ...todonts, {
+    setTodos([
+      ...todos, {
         id: uuid4(),
-        todonts: todontInput
+        todos: todoInput
       }
     ])
-    settodontInput('');
+    settodoInput('');
   }
 
   const handleChange = (e) => {
-    settodontInput(e.target.value);
+    settodoInput(e.target.value);
     console.log(e.target.value);
   }
 
   const handleRemove = (id) => {
-    setTodonts(todonts.filter((todonts) => todonts.id !== id));
+    setTodos(todos.filter((todos) => todos.id !== id));
   }
 
   return (
     <Fragment>
-      <Header pageName="numbermachine" />
+      <Header pageName="to-do-list" />
         <div className="to-do-list">
-          <h1>To-Do List</h1>
-          <h3>Things to do</h3>
-          <p className="explanation">Click on an item to remove it</p>
-          { todonts.map(({ id, todonts }) => (
-            <p onClick={() => handleRemove(id)} key={id}>{todonts}</p>
-          )) }
-          <div className="form-container">
-            <form onSubmit={handleSubmit}>
-              <label htmlFor="">
-                Add To-Don't:
-                <input type="text" onChange={handleChange} value={todontInput} />
-              </label>
-              <button>Add</button>
-            </form>
+          <div className="notepad">
+            <h1>To-Do List</h1>
+            <div className="form-container">
+              <form onSubmit={handleSubmit}>
+                <label htmlFor="">
+                  Add To-Do:
+                  <input type="text" onChange={handleChange} value={todoInput} />
+                </label>
+                <button>Add</button>
+              </form>
+            </div>
+            <p className="explanation">Click on an item to remove it</p>
+            { todos.map(({ id, todos }) => (
+              <p className="task" onClick={() => handleRemove(id)} key={id}>{todos}</p>
+            )) }
           </div>
         </div>
-      <Footer pageName="numbermachine" />
+      <Footer pageName="to-do-list" />
     </Fragment>
   );
 }
 
-export default ToDonts;
+export default ToDos;

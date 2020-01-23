@@ -5,8 +5,18 @@ import { socialLinks, socialLinksWhite, date } from '../utils';
 const Footer = ({ lightLogo, pageName }) => {
   const icons = lightLogo ? socialLinksWhite : socialLinks;
 
+    const handlePageName = (pageName) => {
+        if (pageName === "number-machine") {
+            return("nm-footer");
+        } else if (pageName === "counter") {
+            return("counter-footer");
+        } else if (pageName === "to-do-list") {
+            return("to-do-footer");
+        }
+    }
+
   return (
-      <footer className={ `footer ${pageName !== "number-machine" ? "" : "nm-footer"}`}>
+      <footer className={ `footer ${handlePageName(pageName)} `}>
           <div className="social-links" id="social-links">
               {icons.map((link, i) => (
                   <div className={`social-link ${link.className}`} key={i} id={link.className}>

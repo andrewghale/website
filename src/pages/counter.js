@@ -27,7 +27,7 @@ const Counter = () => {
 
 	return (
 		<Fragment>
-			<Header pageName="numbermachine" />
+			<Header pageName="counter" />
 				<div className="counter-container">
 					<div className="the-count">
 						<img className="the-count-img" src={thecount} alt="The Count"/>
@@ -46,7 +46,7 @@ const Counter = () => {
 						<p>You can increment, decrement and reset the counter value.</p>
 					</div>
 				</div>
-			<Footer pageName="numbermachine"/>
+			<Footer pageName="counter"/>
 		</Fragment>
 	)
 }

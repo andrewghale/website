@@ -1,52 +1,91 @@
 .to-do-list {
-  color: black;
-  margin-top: 2rem;
-  padding: 2rem;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  color: black;
+  min-height: 703px;
+  height: fit-content;
+  margin: $header-height 0 0 0;
   background-image: url($nm-background);
   background-color: #dee3de;
   background-attachment: fixed;
-  border-radius: 4px;
-  // min-height: 700px;
-  // height: fit-content;
-  .explanation {
-    font-size: 1rem;
-    margin: 2rem 0;
-    border-bottom: 1px solid black;
-  }
-  .form-container {
-    margin-top: auto;
-    form {
+  overflow-y: scroll;
+  .notepad {
+    width: 500px;
+    padding: 1rem;
+    background-color: rgb(255, 246, 213);
+    height: fit-content;
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+    .explanation {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4rem;
+      margin: 2rem 0;
+      border-bottom: 1px solid black;
+    }
+    .form-container {
       margin-top: auto;
-      background-color: aliceblue;
-      align-self: flex-end;
-      label {
-        margin: 1rem;
-        input {
+      form {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        margin-top: auto;
+        background-color: aliceblue;
+        align-self: flex-end;
+        label {
           margin: 1rem;
+          input {
+            margin: 1rem;
+            height: 40px;
+            width: 150px;
+            border-radius: 4px;
+            border: 2px solid black;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            resize: horizontal;
+            overflow: auto;
+          }
+        }
+        button {
+          cursor: pointer;
           height: 40px;
-          width: 150px;
+          width: 100px;
           border-radius: 4px;
           border: none;
+          background-color: yellowgreen;
+          margin: 1rem;
           font-size: 1.5rem;
-          padding: 0.5rem 1rem;
-          resize: horizontal;
-          overflow: auto;
-        }
-      }
-      button {
-        height: 40px;
-        width: 100px;
-        border-radius: 4px;
-        border: none;
-        background-color: yellowgreen;
-        margin: 1rem;
-        font-size: 1.5rem;
-        &:hover {
-          background-color: green;
+          &:hover {
+            background-color: green;
+          }
         }
       }
     }
+  }
+}
+
+.task {
+  font-size: 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
+
+.to-do-footer {
+  background-image: url($nm-background);
+  background-color: #dee3de;
+  bottom: 0;
+  .copyright {
+    color: black;
+  }
+}
+
+.to-do-header {
+  background-image: url($nm-background);
+  background-color: #dee3de;
+  background-attachment: fixed;
+  a {
+    color: black;
   }
 }

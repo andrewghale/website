@@ -24,11 +24,7 @@ const About = ({ match }) => {
               </div>
             </Link>
             <Link to="/todolist">
-              <div className="project-thumb to-do-list-thumb">
-                {/* <div className="title-container">
-                  <h3 className="project-title">To Do List</h3>
-                </div> */}
-              </div>
+              <div className="project-thumb to-do-list-thumb" />
             </Link>
             </div>
           </div>
