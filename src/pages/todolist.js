@@ -16,10 +16,6 @@ const ToDos = () => {
     },
     {
       id: uuid4(),
-      todos: 'Scream into the void'
-    },
-    {
-      id: uuid4(),
       todos: 'Buy cat food'
     }
   ])
@@ -54,7 +50,7 @@ const ToDos = () => {
             <div className="form-container">
               <form onSubmit={handleSubmit}>
                 <label htmlFor="">
-                  Add To-Do:
+                  Add Item:
                   <input type="text" onChange={handleChange} value={todoInput} />
                 </label>
                 <button>Add</button>

@@ -98,15 +98,7 @@
             begin="2s"
         />
     </circle> -->
-    <g class="furthest" stroke="grey" stroke-width="0" stroke-linecap="round">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="0.6"
-            begin="5.5s"
-        />
+    <g class="furthest" stroke-linecap="round">
         <polygon fill='#cc0000' points='957 900 539 900 1396 900'>
             <animate
                 attributeName="points"
@@ -128,15 +120,7 @@
             />
         </polygon>
     </g>
-    <g class="leftest" stroke="grey" stroke-width="0" stroke-linecap="round">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="1"
-            begin="5.5s"
-        />
+    <g class="leftest"   stroke-linecap="round">
         <polygon fill='#d6002b' points='-60 900 398 900 816 900'>
             <animate
                 attributeName="points"
@@ -158,15 +142,7 @@
             />
         </polygon>
     </g>
-    <g class="mid-right" stroke="grey" stroke-width="0" stroke-linecap="round">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="0.6"
-            begin="5.5s"
-        />
+    <g class="mid-right" stroke-linecap="round">
         <polygon fill='#d9004b' points='1203 900 1552 900 876 900'>
             <animate
                 attributeName="points"
@@ -188,15 +164,7 @@
             />
         </polygon>
     </g>
-    <g class="mid-left" stroke="grey" stroke-width="0" stroke-linecap="round">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="1"
-            begin="5.5s"
-        />
+    <g class="mid-left" stroke-linecap="round">
         <polygon fill='#d3006c' points='641 900 886 900 367 900'>
             <animate
                 attributeName="points"
@@ -218,15 +186,7 @@
             />
         </polygon>
     </g>
-    <g class="rightest" stroke="grey" stroke-width="0" stroke-linecap="round">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="1"
-            begin="5.5s"
-        />
+    <g class="rightest" stroke-linecap="round">
         <polygon fill='#c4008c' points='1710 900 1401 900 1096 900'>
             <animate
                 attributeName="points"
@@ -248,15 +208,7 @@
             />
         </polygon>
     </g>
-    <g class="nearest" stroke="grey" stroke-width="0">
-        <animate
-            attributeName="stroke-width"
-            dur="1.5s"
-            fill="freeze"
-            from="0"
-            to="1"
-            begin="5.5s"
-        />
+    <g class="nearest">
         <polygon fill='#aa00aa' points='1210 900 971 687 725 900'>
             <animate
                 attributeName="points"
