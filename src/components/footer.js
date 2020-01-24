@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid4 from "uuid4";
 import PropTypes from 'prop-types';
 import { socialLinks, socialLinksWhite, date } from '../utils';
 
@@ -19,7 +20,7 @@ const Footer = ({ lightLogo, pageName }) => {
       <footer className={ `footer ${handlePageName(pageName)} `}>
           <div className="social-links" id="social-links">
               {icons.map((link, i) => (
-                  <div className={`social-link ${link.className}`} key={i} id={link.className}>
+                  <div className={`social-link ${link.className}`} key={uuid4()} id={link.className}>
                       <div className="link-container">
                           <a rel="noopener noreferrer" href={link.src}>
                               <img src={link.img} alt={`${link.name} logo`} />

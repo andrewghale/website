@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import uuid4 from "uuid4";
 import { handleMakeDivisorArrayForPairs } from '../utils';
 const OutputPairs = ({ text, name, guess }) => {
 	const [methodGuess, setMethodGuess] = useState('')
@@ -28,7 +29,14 @@ const OutputPairs = ({ text, name, guess }) => {
 		<div>
 			<div className="output-label">{text}</div>
 			<ul id={`output-${name}`} className="pairs-list output">
-				{output.map(item => <li key={item.toString()} className="output-card">{item}</li>)}
+				{output.map(item =>
+					<li
+						key={uuid4()}
+						className="output-card"
+					>
+						{item}
+					</li>
+				)}
 			</ul>
 		</div>
 	)

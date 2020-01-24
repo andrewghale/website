@@ -2,6 +2,8 @@
 
 Hey there, this is my simple portfolio site. It is an ongoing project which I mainly use to try out new ideas and learn React.js.
 
+The projects page features single-page apps utilising React.
+
 Check out the live site 👉[here](https://www.andyghale.com/)👈
 
 Below is a screenshot of the Home Page.

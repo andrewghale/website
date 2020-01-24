@@ -5,7 +5,7 @@ import uuid4 from "uuid4";
 import "../styles/todolist/app.scss";
 
 const ToDos = () => {
-  const [todos, setTodos] = useState([
+  const [ todos, setTodos ] = useState([
     {
       id: uuid4(),
       todos: 'Go for a run'
@@ -24,10 +24,9 @@ const ToDos = () => {
     }
   ])
 
-  const [todoInput, settodoInput] = useState('');
+  const [ todoInput, settodoInput ] = useState('');
 
   const handleSubmit = (e) => {
-    // Stop form from submitting
     e.preventDefault();
     setTodos([
       ...todos, {
@@ -40,7 +39,6 @@ const ToDos = () => {
 
   const handleChange = (e) => {
     settodoInput(e.target.value);
-    console.log(e.target.value);
   }
 
   const handleRemove = (id) => {
@@ -64,7 +62,13 @@ const ToDos = () => {
             </div>
             <p className="explanation">Click on an item to remove it</p>
             { todos.map(({ id, todos }) => (
-              <p className="task" onClick={() => handleRemove(id)} key={id}>{todos}</p>
+              <p
+                className="task"
+                onClick={() => handleRemove(id)}
+                key={id}
+              >
+                {todos}
+              </p>
             )) }
           </div>
         </div>
