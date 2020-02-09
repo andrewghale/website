@@ -42,6 +42,7 @@
     margin-top: 0.2rem;
     font-size: 3.5rem;
     text-shadow: $title-glow;
+    text-align: center;
     @media screen and (max-width: $bp-tablet) {
       font-size: 2rem;
     }
